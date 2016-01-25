@@ -1,0 +1,33 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic);
+@import url(../css/fonts/roboto.css);
+/* line 5, ../sass/_color.scss */
+body *,
+body :visited,
+body :link {
+  color: #f9e8c8;
+}
+/* line 10, ../sass/_color.scss */
+body .active,
+body a:active,
+body a:hover {
+  color: #f9bd3e;
+}
+
+/* line 6, ../sass/mystyle.scss */
+body {
+  font-size: 12pt;
+  font-family: "roboto",sans-serif;
+  min-width: 320px;
+  /*HEADER*/
+}
+/* line 11, ../sass/mystyle.scss */
+body h1 {
+  font-size: 34.32pt;
+  white-space: nowrap;
+}
+/* line 15, ../sass/mystyle.scss */
+body h2,
+body h3 {
+  font-size: 17.04pt;
+  white-space: nowrap;
+}

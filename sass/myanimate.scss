@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+@import "_vars.scss";
+
+
+/*плавная проявка*/
+.appear{
+	animation-name:example;
+	animation-duration: $appear;
+	animation-timing-function:linear;
+	-webkit-animation-name: example; 
+	-webkit-animation-duration: $appear;
+	-webkit-animation-timing-function:linear; 
+}
+@keyframes example {
+0% {opacity: 0;}
+25% {opacity: 0.3;}
+50% {opacity:0.5;}
+75% {opacity:0.7;}
+100% {opacity:1;}
+}
+@-webkit-keyframes example {
+0% {opacity: 0;}
+25% {opacity: 0.3;}
+50% {opacity:0.5;}
+75% {opacity:0.7;}
+100% {opacity:1;}
+}
+
+/*не работает ускорение/замедление */
+.animated_sloww{ /*моя доработка - супер медленный вариант*/
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes Waschbecken { /*Утонуть*/
+
+ 0% {
+    -webkit-transform: translateY(0) rotate(0deg);
+    transform: translateY(0) rotate(0deg);
+    }
+
+100%{
+    visibility: hidden;
+    -webkit-transform: translatey(250%) rotate(90deg);
+    transform: translatey(250%)rotate(90deg) ;
+	}
+}
+
+@keyframes Waschbecken {
+ 0% {
+    -webkit-transform: translateY(0) rotate(0deg);
+    -ms-transform: translateY(0) rotate(0deg);
+    transform: translateY(0) rotate(0deg);
+	}
+	
+100% {
+    visibility: hidden;
+    -webkit-transform: translatey(250%) rotate(90deg) ;
+    -ms-transform: translatey(250%)rotate(90deg) ;
+    transform: translatey(250%)rotate(90deg);
+	}
+}
+.Waschbecken{ /*параметры задержки свойства прозрачности*/
+	
+	transmision: opacity 2s ease-in 0s;
+	-webkit-transition: opacity 2s ease-in 0s;
+	-o-transition: opacity 2s ease-in 0s;
+	-moz-transition: opacity 2s ease-in 0s;}
+
+.Waschbecken:focus{ /*можно activ, 
+*если focus - после повторного 
+нажатия в любой области - появиться на старом месте
+(не красивый эффект при возвате на страницу с другой)*/
+	-webkit-animation-name: Waschbecken;
+	animation-name: Waschbecken;
+	opacity: 0; }
+
+.Waschbecken:hover {
+	cursor:no-drop;}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

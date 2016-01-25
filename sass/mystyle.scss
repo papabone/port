@@ -1,0 +1,20 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic);
+@import "../css/fonts/roboto.css";
+@import "_color.scss";
+@import "_vars.scss";
+@import "_adaptation.scss";
+body{
+  font-size: $fs;
+  font-family: "roboto",sans-serif;
+  min-width: 320px;
+  /*HEADER*/
+  h1{
+    font-size: $fs*2.86;
+    white-space: nowrap; 
+  }
+  h2,
+  h3{
+    font-size: $fs*1.42;
+    white-space: nowrap; 
+  }
+}

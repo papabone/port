@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../fonts/Ubuntu/Ubuntu-R.ttf');
+}
+@font-face {
+  font-family: 'ubuntu';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../../fonts/Ubuntu/Ubuntu-B.ttf');
+}
+@font-face {
+  font-family: 'ubuntu';
+  font-style: italic;
+  font-weight: 700;
+  src: url('../../fonts/Ubuntu/Ubuntu-BI.ttf');
+}
+@font-face {
+  font-family: 'ubuntu';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../../fonts/Ubuntu/Ubuntu-RI.ttf');
+}
+@font-face {
+  font-family: 'ubuntu_condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../fonts/Ubuntu/Ubuntu-C.ttf');
+}

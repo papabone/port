@@ -1,0 +1,15 @@
+$main:#f9e8c8;
+$active:#f9bd3e;
+
+body{
+	*,
+	:visited,
+	:link{
+		color:$main;
+	}
+	.active,
+	a:active,
+	a:hover{
+		color: $active;
+	}
+}

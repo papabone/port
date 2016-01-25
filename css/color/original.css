@@ -1,0 +1,119 @@
+@charset "UTF-8";
+/*
+fefcea - основной
+240f00 - цвет текста
+A59C4C - цвет текста заголовков
+225, 223, 206 - светлый фон
+186, 184, 165 - темный фон
+80, 57, 40 - фон элементов управления
+#503928 - copyright и кнопка
+*/
+body{
+	background-color: #fefcea;
+}
+/*основной цвет текста*/
+body *{
+	color: #240f00;
+}
+/*цвет текста заголовков*/
+h1,
+h2,
+i{
+	color: #A59C4C;
+}
+
+/*background-color*/
+header{
+	background-color: rgba(225, 223, 206, 0.4);
+}
+#about,
+#detail,
+#contact{
+	background-color: rgba(225, 223, 206, 0.6);
+}
+/*#shop{
+	background-color: rgba(186, 184, 165, 0.4);
+}*/
+#baynow,
+.copyright{
+	background-color: #503928;
+}
+
+/*over elements*/
+.navbar{/*navbar*/
+	background-color: rgba(80, 57, 40, 0.35);
+}
+ul.nav li a {
+	color: #fefcea;
+}
+ul.nav li a:active,
+ul.nav li a:hover{
+	background-color: transparent;
+	color: #240f00;
+}
+
+.nav_toggle{/*sandwich*/
+	background-color:transparent;
+}
+.sw-topper,
+.sw-bottom,
+.sw-footer{
+	background: #240f00;
+}
+#sandwich.active .sw-topper,
+#sandwich.active .sw-bottom,
+#sandwich.active .sw-footer {
+	background:#fefcea;
+}
+header h1,
+header p{
+	color: #fefcea;
+}
+.carousel-control span {/*carousel*/
+	color:rgba(80, 57, 40, 0.8);
+}
+.carousel-indicators li{
+	border-color:rgba(80, 57, 40, 0.8);
+}
+.carousel-indicators .active{
+	background-color: rgba(80, 57, 40, 0.8);
+}
+.right_soc_bar{
+    background-color: rgba(80, 57, 40, 0.35);
+}
+#shop a{
+	background-color: #240f00;
+}
+#shop a p{
+	color: #fefcea;
+}
+#baynow a{
+ 	background-color: transparent;	
+ 	border-color: rgba(186, 184, 165, 0.99);
+ }
+#baynow a:hover{
+ 	background-color:  rgba(186, 184, 165, 0.6);
+ 	border-color: transparent;
+ }
+ #baynow a h1{
+ 	color: #fefcea;
+ }
+#contact input{
+	background-color: rgba(186, 184, 165, 0.6);
+	border-color: transparent;
+}
+#contact input[type="submit"]{
+ 	background-color: transparent;	
+ 	border-color: #503928 !important;
+ }
+ #contact input[type="submit"]:hover{
+ 	background-color:  rgba(186, 184, 165, 0.6);
+}
+.copyright>*,
+.copyright>*>a {
+	color: #e2cfba;
+}
+.copyright a:hover{
+	color: #fefcea;
+	text-decoration: none;
+}
