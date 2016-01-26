@@ -3,18 +3,54 @@
 @import "_color.scss";
 @import "_vars.scss";
 @import "_adaptation.scss";
-body{
-  font-size: $fs;
-  font-family: "roboto",sans-serif;
-  min-width: 320px;
-  /*HEADER*/
-  h1{
-    font-size: $fs*2.86;
-    white-space: nowrap; 
-  }
-  h2,
-  h3{
-    font-size: $fs*1.42;
-    white-space: nowrap; 
+@import "_mymixins.scss";
+html{
+  position: relative;
+  height: 100%;
+  body{
+    position: relative;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: $fs;
+    font-family: "roboto",sans-serif;
+    min-width: 320px;
+    h1{
+      font-size: $fs*2.86;
+      white-space: nowrap; 
+    }
+    h2,
+    h3{
+      font-size: $fs*1.42;
+      white-space: nowrap; 
+    }
+    //Sweper
+    .swiper-container{
+      width: 100%;
+      height: 100%;
+      background-color: green;
+      .swiper-pagination-h{
+        top:5%;
+        bottom: 90%;
+        .swiper-pagination-bullet{
+          width: auto;
+          height: auto;
+          background-color: transparent;
+        }
+        .swiper-pagination-bullet-active{
+          border-radius: 0;
+          border-bottom: 1px solid $active;
+        }
+      }
+      .swiper-slide{
+      @include flexbox();
+      @include justify-content($justify);
+      @include align-items ($al-items);
+      }
+      .swiper-container-v {
+        background: #eee;
+        opacity: 0.8;
+      } 
+    }      
   }
 }

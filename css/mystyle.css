@@ -1,33 +1,85 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic);
 @import url(../css/fonts/roboto.css);
-/* line 5, ../sass/_color.scss */
+/* line 6, ../sass/_color.scss */
 body *,
 body :visited,
 body :link {
   color: #f9e8c8;
 }
-/* line 10, ../sass/_color.scss */
+/* line 11, ../sass/_color.scss */
 body .active,
 body a:active,
-body a:hover {
+body a:hover,
+body .swiper-pagination-bullet-active {
   color: #f9bd3e;
+  transition: color 1s ease 0s;
 }
 
-/* line 6, ../sass/mystyle.scss */
-body {
+/* line 7, ../sass/mystyle.scss */
+html {
+  position: relative;
+  height: 100%;
+}
+/* line 10, ../sass/mystyle.scss */
+html body {
+  position: relative;
+  height: 100%;
+  margin: 0;
+  padding: 0;
   font-size: 12pt;
   font-family: "roboto",sans-serif;
   min-width: 320px;
-  /*HEADER*/
 }
-/* line 11, ../sass/mystyle.scss */
-body h1 {
+/* line 18, ../sass/mystyle.scss */
+html body h1 {
   font-size: 34.32pt;
   white-space: nowrap;
 }
-/* line 15, ../sass/mystyle.scss */
-body h2,
-body h3 {
+/* line 22, ../sass/mystyle.scss */
+html body h2,
+html body h3 {
   font-size: 17.04pt;
   white-space: nowrap;
+}
+/* line 28, ../sass/mystyle.scss */
+html body .swiper-container {
+  width: 100%;
+  height: 100%;
+  background-color: green;
+}
+/* line 32, ../sass/mystyle.scss */
+html body .swiper-container .swiper-pagination-h {
+  top: 5%;
+  bottom: 90%;
+}
+/* line 35, ../sass/mystyle.scss */
+html body .swiper-container .swiper-pagination-h .swiper-pagination-bullet {
+  width: auto;
+  height: auto;
+  background-color: transparent;
+}
+/* line 40, ../sass/mystyle.scss */
+html body .swiper-container .swiper-pagination-h .swiper-pagination-bullet-active {
+  border-radius: 0;
+  border-bottom: 1px solid #f9bd3e;
+}
+/* line 45, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+/* line 50, ../sass/mystyle.scss */
+html body .swiper-container .swiper-container-v {
+  background: #eee;
+  opacity: 0.8;
 }

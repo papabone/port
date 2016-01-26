@@ -1,3 +1,4 @@
+@import "_vars.scss";
 $main:#f9e8c8;
 $active:#f9bd3e;
 
@@ -9,7 +10,9 @@ body{
 	}
 	.active,
 	a:active,
-	a:hover{
+	a:hover,
+	.swiper-pagination-bullet-active{
 		color: $active;
+		transition: $col_trans;
 	}
 }

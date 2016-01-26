@@ -10,7 +10,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Бланк</title>
+  <title>Портфолио</title>
   <!-- Animate -->
   
   <!-- MyAnimate -->
@@ -19,6 +19,8 @@
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <!-- Социальные лайки-->
   
+  <!--Swipper touch slider-->
+  <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
   <!-- Мой главный стиль -->
   <link href="css/mystyle.css" rel="stylesheet">
   <!-- Адаптация -->
@@ -31,18 +33,47 @@
 
 <body>
 
-<!-- HEADER
+<!-- SWEPER
   ================================================== -->
-  <header>
-  </header>
+
+    <div class="swiper-container swiper-container-h">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="swiper-container swiper-container-v">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">Vertical Slide 1</div>
+                <div class="swiper-slide">Vertical Slide 2</div>  
+            </div>
+            <div class="swiper-pagination swiper-pagination-v">
+            <span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div> 
+        <div class="swiper-slide">Slide 5</div>    
+      </div>
+      <!-- pagination -->
+      <div class="swiper-pagination swiper-pagination-h">
+      </div>
+      <!-- navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
    
-<!-- HEADER
+<!-- SWEPER
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
   
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <!-- Подключаем карусель JS -->
   <script src="js/bootstrap.min.js"></script>
+  <!-- Подключаем карусель Swipper-->
+  <script src="js/swiper.jquery.min.js"></script>
   <!--Мой js-->
   <script src="js/common.js"></script>
 

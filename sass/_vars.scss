@@ -1,1 +1,10 @@
+//FONTS
 $fs:12pt;
+
+//ANIMATION
+$col_trans: color 1.0s ease 0s;//задержка смены цветов
+$appear:1.5s;//задержка проявки
+
+//FLEX
+$justify:center;//выравнивание флекса по главной оси flex-start | flex-end | center | space-between | space-around
+$al-items:center;//выравнивание флекса по 2 оси flex-start | flex-end | center | baseline | stretch

@@ -1,5 +1,6 @@
 $(document).ready(function() {
 	
+	//кнопка sandwiich
 	$(".nav_toggle").click(function() {
 		$("#sandwich").toggleClass("active");
 	});
@@ -16,5 +17,29 @@ $(document).ready(function() {
 			$(".nav_mnu").fadeIn(600);
 		};
 	});
+
+
+  //initialize SWIPPER touch-slider
+  var pageName = ["Нулевой", "Портфолио", "Навыки", "Главная", "Навыки", "Портфолио"],
+   swiperH = new Swiper('.swiper-container-h', {
+    // Optional parameters 
+    	initialSlide: 2,
+    	grabCursor: true,
+    	pagination: '.swiper-pagination-h',
+    	paginationClickable: true,
+    	paginationBulletRender: function (index, className) {
+        return '<span class="' + className + '">' + pageName[(index+1)] + '</span>';
+      },
+			nextButton: '.swiper-button-next',
+      prevButton: '.swiper-button-prev',
+      speed: 2000
+  });
+  var swiperV = new Swiper('.swiper-container-v', {
+      pagination: '.swiper-pagination-v',
+      paginationClickable: true,
+      direction: 'vertical',
+      mousewheelControl: true
+  });
+         
 });
 					
