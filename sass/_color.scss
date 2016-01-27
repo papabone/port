@@ -13,6 +13,6 @@ body{
 	a:hover,
 	.swiper-pagination-bullet-active{
 		color: $active;
-		transition: $col_trans;
+		border-color: $active;
 	}
 }

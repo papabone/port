@@ -1,9 +1,11 @@
+@import "_vars.scss";
+@import "_mymixins.scss";
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic);
 @import "../css/fonts/roboto.css";
+@import "_swiper.min.scss";
 @import "_color.scss";
-@import "_vars.scss";
 @import "_adaptation.scss";
-@import "_mymixins.scss";
+
 html{
   position: relative;
   height: 100%;
@@ -36,10 +38,12 @@ html{
           width: auto;
           height: auto;
           background-color: transparent;
-        }
-        .swiper-pagination-bullet-active{
           border-radius: 0;
-          border-bottom: 1px solid $active;
+          @include transit($transit);
+        }
+        .swiper-pagination-bullet-active{         
+          border-bottom-width: 1px;
+          border-bottom-style: solid;
         }
       }
       .swiper-slide{

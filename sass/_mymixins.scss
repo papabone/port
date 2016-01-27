@@ -9,10 +9,13 @@
   -ms-flex-pack: $justify;
   -webkit-justify-content: $justify;
   justify-content: $justify;
- }
- @mixin align-items ($al-items){
+}
+@mixin align-items ($al-items){
     -webkit-box-align: $al-items;
     -ms-flex-align: $al-items;
     -webkit-align-items: $al-items;
     align-items: $al-items;
-  }
+}
+@mixin transit($transit){
+  transition: all $transit ease 0s;
+}
