@@ -11,9 +11,8 @@
   <meta name="author" content="">
 
   <title>Портфолио</title>
-  <!-- Animate -->
-  
-  
+   
+  <style> html body{background-color: #000;}</style>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   
@@ -35,7 +34,7 @@
         <div class="swiper-slide">
           <div class="swiper-container swiper-container-v">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">Vertical Slide 1</div>
+                <div class="swiper-slide" id="first">Vertical Slide 1</div>
                 <div class="swiper-slide">Vertical Slide 2</div>  
             </div>
             <div class="swiper-pagination swiper-pagination-v">
@@ -44,16 +43,13 @@
           </div>
         </div>
         <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide" id="main">Slide 3</div>
         <div class="swiper-slide">Slide 4</div> 
         <div class="swiper-slide">Slide 5</div>    
       </div>
       <!-- pagination -->
       <div class="swiper-pagination swiper-pagination-h">
       </div>
-      <!-- navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
     </div>
 
    
@@ -67,9 +63,9 @@
     $(document).ready(function() {
         $("head").append("<link rel='stylesheet' type='text/css' href='css/myanimate.css' />");
     });
-  </script defer>
+  </script>
   <!--Скомпилированные стили-->
-  <script>
+  <script defer>
     $(document).ready(function() {
         $("head").append("<link rel='stylesheet' type='text/css' href='css/mystyle.css' />");
     });

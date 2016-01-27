@@ -1,6 +1,6 @@
 @import "_vars.scss";
-$main:#f9e8c8;
-$active:#f9bd3e;
+$main:#fff;
+$active:#f51212;
 
 body{
 	*,
@@ -13,6 +13,16 @@ body{
 	a:hover,
 	.swiper-pagination-bullet-active{
 		color: $active;
-		border-color: $active;
+		&::after{
+			border-color: $active;
+		}
+	}
+	.swiper-container-v {
+		.swiper-pagination-bullet{
+			background-color: $main;
+			&-active{
+				background-color: $active;
+			}
+		}
 	}
 }

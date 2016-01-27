@@ -30,15 +30,13 @@ $(document).ready(function() {
     	paginationBulletRender: function (index, className) {
         return '<span class="' + className + '">' + pageName[(index+1)] + '</span>';
       },
-			nextButton: '.swiper-button-next',
-      prevButton: '.swiper-button-prev',
       speed: 2000
   });
   var swiperV = new Swiper('.swiper-container-v', {
       pagination: '.swiper-pagination-v',
       paginationClickable: true,
       direction: 'vertical',
-      mousewheelControl: true
+      mousewheelControl: true,
   });
          
 });

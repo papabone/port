@@ -1,6 +1,6 @@
 @import "_vars.scss";
 @import "_mymixins.scss";
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,600&subset=latin,cyrillic);
 @import "../css/fonts/roboto.css";
 @import "_swiper.min.scss";
 @import "_color.scss";
@@ -15,7 +15,7 @@ html{
     margin: 0;
     padding: 0;
     font-size: $fs;
-    font-family: "roboto",sans-serif;
+    font-family: 'Open Sans', sans-serif;
     min-width: 320px;
     h1{
       font-size: $fs*2.86;
@@ -30,30 +30,55 @@ html{
     .swiper-container{
       width: 100%;
       height: 100%;
-      background-color: green;
       .swiper-pagination-h{
         top:5%;
         bottom: 90%;
         .swiper-pagination-bullet{
+          font-size: 1.41*$fs;
+          text-transform: uppercase;
+          font-weight: 100;
           width: auto;
           height: auto;
+          padding:0 2%;
           background-color: transparent;
           border-radius: 0;
           @include transit($transit);
+          opacity: 0.7;
+          position: relative;
         }
         .swiper-pagination-bullet-active{         
-          border-bottom-width: 1px;
-          border-bottom-style: solid;
+          font-size: 1.6*$fs;
+          opacity: 1;
+          &::after{
+            content: '';
+            display: inherit;
+            position: absolute;
+            bottom:-5%;
+            left:30%;
+            width: 40%;
+            border-width: 1px;
+            border-style: solid;
+          }
         }
       }
       .swiper-slide{
       @include flexbox();
       @include justify-content($justify);
       @include align-items ($al-items);
+      &#main{
+        background-image: url('../img/bg01_2.jpg');
+        background-size: cover;
+        background-position: top center;
+        }
       }
-      .swiper-container-v {
-        background: #eee;
-        opacity: 0.8;
+      .swiper-container-v{
+        #first{
+          background-color: gray;
+        }
+        .swiper-slide-active{
+          width: 100%;
+          height: 100%!important;
+        }
       } 
     }      
   }

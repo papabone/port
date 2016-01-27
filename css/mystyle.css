@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,600&subset=latin,cyrillic);
 @import url(../css/fonts/roboto.css);
 /**
  * Swiper 3.3.0
@@ -617,15 +617,29 @@ button.swiper-pagination-bullet {
 body *,
 body :visited,
 body :link {
-  color: #f9e8c8;
+  color: #fff;
 }
 /* line 11, ../sass/_color.scss */
 body .active,
 body a:active,
 body a:hover,
 body .swiper-pagination-bullet-active {
-  color: #f9bd3e;
-  border-color: #f9bd3e;
+  color: #f51212;
+}
+/* line 16, ../sass/_color.scss */
+body .active::after,
+body a:active::after,
+body a:hover::after,
+body .swiper-pagination-bullet-active::after {
+  border-color: #f51212;
+}
+/* line 21, ../sass/_color.scss */
+body .swiper-container-v .swiper-pagination-bullet {
+  background-color: #fff;
+}
+/* line 23, ../sass/_color.scss */
+body .swiper-container-v .swiper-pagination-bullet-active {
+  background-color: #f51212;
 }
 
 /* line 9, ../sass/mystyle.scss */
@@ -640,7 +654,7 @@ html body {
   margin: 0;
   padding: 0;
   font-size: 12pt;
-  font-family: "roboto",sans-serif;
+  font-family: 'Open Sans', sans-serif;
   min-width: 320px;
 }
 /* line 20, ../sass/mystyle.scss */
@@ -658,27 +672,43 @@ html body h3 {
 html body .swiper-container {
   width: 100%;
   height: 100%;
-  background-color: green;
 }
-/* line 34, ../sass/mystyle.scss */
+/* line 33, ../sass/mystyle.scss */
 html body .swiper-container .swiper-pagination-h {
   top: 5%;
   bottom: 90%;
 }
-/* line 37, ../sass/mystyle.scss */
+/* line 36, ../sass/mystyle.scss */
 html body .swiper-container .swiper-pagination-h .swiper-pagination-bullet {
+  font-size: 16.92pt;
+  text-transform: uppercase;
+  font-weight: 100;
   width: auto;
   height: auto;
+  padding: 0 2%;
   background-color: transparent;
   border-radius: 0;
   transition: all 3.5s ease 0s;
-}
-/* line 44, ../sass/mystyle.scss */
-html body .swiper-container .swiper-pagination-h .swiper-pagination-bullet-active {
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
+  opacity: 0.7;
+  position: relative;
 }
 /* line 49, ../sass/mystyle.scss */
+html body .swiper-container .swiper-pagination-h .swiper-pagination-bullet-active {
+  font-size: 19.2pt;
+  opacity: 1;
+}
+/* line 52, ../sass/mystyle.scss */
+html body .swiper-container .swiper-pagination-h .swiper-pagination-bullet-active::after {
+  content: '';
+  display: inherit;
+  position: absolute;
+  bottom: -5%;
+  left: 30%;
+  width: 40%;
+  border-width: 1px;
+  border-style: solid;
+}
+/* line 64, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -693,8 +723,18 @@ html body .swiper-container .swiper-slide {
   -webkit-align-items: center;
   align-items: center;
 }
-/* line 54, ../sass/mystyle.scss */
-html body .swiper-container .swiper-container-v {
-  background: #eee;
-  opacity: 0.8;
+/* line 68, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#main {
+  background-image: url("../img/bg01_2.jpg");
+  background-size: cover;
+  background-position: top center;
+}
+/* line 75, ../sass/mystyle.scss */
+html body .swiper-container .swiper-container-v #first {
+  background-color: gray;
+}
+/* line 78, ../sass/mystyle.scss */
+html body .swiper-container .swiper-container-v .swiper-slide-active {
+  width: 100%;
+  height: 100% !important;
 }
