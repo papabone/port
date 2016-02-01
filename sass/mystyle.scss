@@ -34,7 +34,7 @@ html{
         top:5%;
         bottom: 90%;
         .swiper-pagination-bullet{
-          font-size: 1.41*$fs;
+          font-size: 1.16*$fs;
           text-transform: uppercase;
           font-weight: 100;
           width: auto;
@@ -47,7 +47,7 @@ html{
           position: relative;
         }
         .swiper-pagination-bullet-active{         
-          font-size: 1.6*$fs;
+          font-size: 1.33*$fs;
           opacity: 1;
           &::after{
             content: '';
@@ -65,10 +65,30 @@ html{
       @include flexbox();
       @include justify-content($justify);
       @include align-items ($al-items);
+      flex-direction:column;
       &#main{
         background-image: url('../img/bg01_2.jpg');
         background-size: cover;
         background-position: top center;
+        }
+        .button {
+          border-width: 1px;
+          border-style: solid;
+          padding: 15px 30px;
+          font-size: 1.18*$fs; 
+          font-weight: 500; 
+        }
+        .wrap{
+          position: relative;
+          float: right;
+          &.right{
+            left: 38vw;
+            text-align:right;
+          }
+          &.left{
+            right: 38vw;
+            text-align:left;
+          }
         }
       }
       .swiper-container-v{

@@ -680,7 +680,7 @@ html body .swiper-container .swiper-pagination-h {
 }
 /* line 36, ../sass/mystyle.scss */
 html body .swiper-container .swiper-pagination-h .swiper-pagination-bullet {
-  font-size: 16.92pt;
+  font-size: 13.92pt;
   text-transform: uppercase;
   font-weight: 100;
   width: auto;
@@ -688,13 +688,13 @@ html body .swiper-container .swiper-pagination-h .swiper-pagination-bullet {
   padding: 0 2%;
   background-color: transparent;
   border-radius: 0;
-  transition: all 3.5s ease 0s;
+  transition: all 1.5s ease 0s;
   opacity: 0.7;
   position: relative;
 }
 /* line 49, ../sass/mystyle.scss */
 html body .swiper-container .swiper-pagination-h .swiper-pagination-bullet-active {
-  font-size: 19.2pt;
+  font-size: 15.96pt;
   opacity: 1;
 }
 /* line 52, ../sass/mystyle.scss */
@@ -722,18 +722,42 @@ html body .swiper-container .swiper-slide {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+  flex-direction: column;
 }
-/* line 68, ../sass/mystyle.scss */
+/* line 69, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#main {
   background-image: url("../img/bg01_2.jpg");
   background-size: cover;
   background-position: top center;
 }
-/* line 75, ../sass/mystyle.scss */
+/* line 74, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide .button {
+  border-width: 1px;
+  border-style: solid;
+  padding: 15px 30px;
+  font-size: 14.16pt;
+  font-weight: 500;
+}
+/* line 81, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide .wrap {
+  position: relative;
+  float: right;
+}
+/* line 84, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide .wrap.right {
+  left: 38vw;
+  text-align: right;
+}
+/* line 88, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide .wrap.left {
+  right: 38vw;
+  text-align: left;
+}
+/* line 95, ../sass/mystyle.scss */
 html body .swiper-container .swiper-container-v #first {
   background-color: gray;
 }
-/* line 78, ../sass/mystyle.scss */
+/* line 98, ../sass/mystyle.scss */
 html body .swiper-container .swiper-container-v .swiper-slide-active {
   width: 100%;
   height: 100% !important;

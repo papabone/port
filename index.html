@@ -27,7 +27,6 @@
   ================================================== -->
 
     <div class="swiper-container swiper-container-h">
-    <div class="loader-inner ball-pulse"></div>
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
         <!-- Slides -->
@@ -43,8 +42,23 @@
           </div>
         </div>
         <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide" id="main">Slide 3</div>
-        <div class="swiper-slide">Slide 4</div> 
+        <div class="swiper-slide" id="main">
+          <h1>Zen<span>box</span></h1>
+          <h3>Создание сайтов под ключ</h3>
+          <p>Напишите нам сообщение:</p>
+          <a href="#" class="button">Отправить сообщение</a>
+          <div class="flex-block">
+            <div class="wrap left">
+              <h2>Дизайнер</h2>
+              <p>Елена Пономаренко</p>
+            </div>
+            <div class="wrap right">
+              <h2>Разработчик</h2>
+              <p>Константин Филон</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide" id=>Slide 4</div> 
         <div class="swiper-slide">Slide 5</div>    
       </div>
       <!-- pagination -->
@@ -58,6 +72,12 @@
   
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+  <!-- HelloPreload -->
+  <style type="text/css">#hellopreloader>p{display:none;}#hellopreloader_preload{display: block;position: fixed;z-index: 99999;top: 0;left: 0;width: 100%;height: 100%;min-width: 1000px;background: #000000 url(img/puff.svg) center center no-repeat;background-size:97px;}</style>
+  <div id="hellopreloader"><div id="hellopreloader_preload"></div><p><a href="http://hello-site.ru">Hello-Site.ru. Бесплатный конструктор сайтов.</a></p></div>
+  <script type="text/javascript">var hellopreloader = document.getElementById("hellopreloader_preload");function fadeOutnojquery(el){el.style.opacity = 1;var interhellopreloader = setInterval(function(){el.style.opacity = el.style.opacity - 0.05;if (el.style.opacity <=0.05){ clearInterval(interhellopreloader);hellopreloader.style.display = "none";}},16);}window.onload = function(){setTimeout(function(){fadeOutnojquery(hellopreloader);},500);};</script>
+  
   <!--Myanimate css-->
   <script defer >
     $(document).ready(function() {
