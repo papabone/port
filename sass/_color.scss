@@ -17,6 +17,17 @@ body{
 			border-color: $active;
 		}
 	}
+	#dev_skill,
+	#dev_port{
+    background-color: rgba(255,255,255,0.5);
+  }
+  #main{
+  	h1{
+  		&::first-letter{
+  			color:$active;
+  		}
+  	}
+  }
 	.swiper-container-v {
 		.swiper-pagination-bullet{
 			background-color: $main;
