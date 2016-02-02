@@ -23,7 +23,7 @@ $(document).ready(function() {
   var pageName = ["Нулевой", "Портфолио", "Навыки", "Главная", "Навыки", "Портфолио"],
    swiperH = new Swiper('.swiper-container-h', {
     // Optional parameters 
-    	initialSlide: 2,
+    	initialSlide: 1,
     	grabCursor: true,
     	pagination: '.swiper-pagination-h',
     	paginationClickable: true,

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,600&subset=latin,cyrillic);
 @import url(../css/fonts/roboto.css);
 /**
@@ -651,12 +652,46 @@ body .swiper-container-v .swiper-pagination-bullet-active {
   background-color: #f51212;
 }
 
-/* line 9, ../sass/mystyle.scss */
+/* line 1, ../sass/_icons.scss */
+.icon_box {
+  position: relative;
+}
+/* line 3, ../sass/_icons.scss */
+.icon_box .icons {
+  display: block;
+  background: url("../img/icons.png");
+  position: relative;
+  width: 100px;
+  /*icon1*/
+  height: 100px;
+  top: 0px;
+  left: 50%;
+  margin-left: -50px;
+  padding: 0;
+  margin-bottom: 8%;
+}
+/* line 14, ../sass/_icons.scss */
+.icon_box .icons.icons_small {
+  /*╨╝╨░╨╗╤Л╨╡ ╨╕╨║╨╛╨╜╨║╨╕*/
+  margin-left: -25px;
+  width: 50px;
+  height: 50px;
+}
+/* line 20, ../sass/_icons.scss */
+.icon_box .icons.icon_2 {
+  background-position: -50px 0;
+}
+/* line 23, ../sass/_icons.scss */
+.icon_box .icons.icon_3 {
+  background-position: -100px 0;
+}
+
+/* line 10, ../sass/mystyle.scss */
 html {
   position: relative;
   height: 100%;
 }
-/* line 12, ../sass/mystyle.scss */
+/* line 13, ../sass/mystyle.scss */
 html body {
   position: relative;
   height: 100%;
@@ -666,7 +701,7 @@ html body {
   font-family: 'Open Sans', sans-serif;
   min-width: 320px;
 }
-/* line 21, ../sass/mystyle.scss */
+/* line 22, ../sass/mystyle.scss */
 html body h1,
 html body h2,
 html body h3 {
@@ -676,25 +711,25 @@ html body h3 {
   margin: 0;
   line-height: 1.4;
 }
-/* line 29, ../sass/mystyle.scss */
+/* line 30, ../sass/mystyle.scss */
 html body h2 {
   font-size: 18.72pt;
 }
-/* line 32, ../sass/mystyle.scss */
+/* line 33, ../sass/mystyle.scss */
 html body h3 {
   font-size: 12.72pt;
 }
-/* line 36, ../sass/mystyle.scss */
+/* line 37, ../sass/mystyle.scss */
 html body .swiper-container {
   width: 100%;
   height: 100%;
 }
-/* line 39, ../sass/mystyle.scss */
+/* line 40, ../sass/mystyle.scss */
 html body .swiper-container .swiper-pagination-h {
   top: 5%;
   bottom: 90%;
 }
-/* line 42, ../sass/mystyle.scss */
+/* line 43, ../sass/mystyle.scss */
 html body .swiper-container .swiper-pagination-h .swiper-pagination-bullet {
   text-transform: uppercase;
   font-weight: 100;
@@ -707,12 +742,12 @@ html body .swiper-container .swiper-pagination-h .swiper-pagination-bullet {
   opacity: 0.7;
   position: relative;
 }
-/* line 54, ../sass/mystyle.scss */
+/* line 55, ../sass/mystyle.scss */
 html body .swiper-container .swiper-pagination-h .swiper-pagination-bullet-active {
   font-size: 14.28pt;
   opacity: 1;
 }
-/* line 57, ../sass/mystyle.scss */
+/* line 58, ../sass/mystyle.scss */
 html body .swiper-container .swiper-pagination-h .swiper-pagination-bullet-active::after {
   content: '';
   display: inherit;
@@ -723,7 +758,7 @@ html body .swiper-container .swiper-pagination-h .swiper-pagination-bullet-activ
   border-width: 1px;
   border-style: solid;
 }
-/* line 69, ../sass/mystyle.scss */
+/* line 70, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -739,28 +774,28 @@ html body .swiper-container .swiper-slide {
   align-items: center;
   flex-direction: column;
 }
-/* line 74, ../sass/mystyle.scss */
+/* line 75, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#main {
   background-image: url("../img/bg01_2.jpg");
   background-size: cover;
   background-position: top center;
 }
-/* line 78, ../sass/mystyle.scss */
+/* line 79, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#main h1 {
   margin-top: 10%;
   letter-spacing: 10pt;
 }
-/* line 81, ../sass/mystyle.scss */
+/* line 82, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#main h1 span {
   padding-left: 6%;
   letter-spacing: 5pt;
 }
-/* line 86, ../sass/mystyle.scss */
+/* line 87, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#main h3 {
   margin-bottom: 12%;
   font-weight: normal;
 }
-/* line 90, ../sass/mystyle.scss */
+/* line 91, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#main .button {
   border-width: 1px;
   border-style: solid;
@@ -772,30 +807,54 @@ html body .swiper-container .swiper-slide#main .button {
   text-transform: uppercase;
   text-decoration: none;
 }
-/* line 101, ../sass/mystyle.scss */
+/* line 102, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#main .wrap {
   position: relative;
   float: right;
 }
-/* line 104, ../sass/mystyle.scss */
+/* line 105, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#main .wrap.right {
   left: 38vw;
   text-align: right;
 }
-/* line 108, ../sass/mystyle.scss */
+/* line 109, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#main .wrap.left {
   right: 38vw;
   text-align: left;
 }
-/* line 112, ../sass/mystyle.scss */
+/* line 113, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#main .wrap p {
   margin: 10px 0;
 }
-/* line 118, ../sass/mystyle.scss */
+/* line 119, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#dis_skill .top {
+  position: relative;
+  right: 31.1%;
+  text-align: left;
+}
+/* line 123, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#dis_skill .top h4 {
+  margin-top: 2%;
+}
+/* line 126, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#dis_skill .top * {
+  float: left;
+}
+/* line 131, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#dis_skill .foot * {
+  text-align: center;
+  padding: 10px;
+}
+/* line 135, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#dis_skill .foot .col-md-4 {
+  padding-right: 5%;
+  padding-left: 5%;
+}
+/* line 142, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide .swiper-container-v #first {
   background-color: gray;
 }
-/* line 121, ../sass/mystyle.scss */
+/* line 145, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide .swiper-container-v .swiper-slide-active {
   width: 100%;
   height: 100% !important;

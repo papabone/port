@@ -4,6 +4,7 @@
 @import "../css/fonts/roboto.css";
 @import "_swiper.min.scss";
 @import "_color.scss";
+@import "_icons.scss";
 @import "_adaptation.scss";
 
 html{
@@ -111,6 +112,29 @@ html{
             }
             p{
               margin:10px 0;
+            }
+          }
+        }
+        &#dis_skill{
+          .top{
+            position: relative;
+            right:31.1%;
+            text-align: left;
+            h4{
+              margin-top: 2%;
+            }
+            *{
+              float: left;
+            }
+          }
+          .foot{
+            *{
+              text-align: center;
+              padding: 10px;
+            }
+            .col-md-4{
+              padding-right: 5%;
+              padding-left: 5%;
             }
           }
         }

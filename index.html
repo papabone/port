@@ -22,7 +22,10 @@
 </head>
 
 <body>
-
+  <!-- HelloPreload -->
+  <style type="text/css">#hellopreloader>p{display:none;}#hellopreloader_preload{display: block;position: fixed;z-index: 99999;top: 0;left: 0;width: 100%;height: 100%;min-width: 1000px;background: #000000 url(img/puff.svg) center center no-repeat;background-size:97px;}</style>
+  <div id="hellopreloader"><div id="hellopreloader_preload"></div><p><a href="http://hello-site.ru">Hello-Site.ru. Бесплатный конструктор сайтов.</a></p></div>
+  <script type="text/javascript">var hellopreloader = document.getElementById("hellopreloader_preload");function fadeOutnojquery(el){el.style.opacity = 1;var interhellopreloader = setInterval(function(){el.style.opacity = el.style.opacity - 0.05;if (el.style.opacity <=0.05){ clearInterval(interhellopreloader);hellopreloader.style.display = "none";}},16);}window.onload = function(){setTimeout(function(){fadeOutnojquery(hellopreloader);},500);};</script>
 <!-- SWEPER
   ================================================== -->
 
@@ -41,7 +44,29 @@
             </div>
           </div>
         </div>
-        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide" id="dis_skill">
+          <div class="top">
+            <h2>Дизайнер</h2>
+            <h4>Елена Пономаренко</h4>
+          </div>    
+          <div class="foot row">
+            <div class="icon_box col-md-offset-1 col-md-3">
+              <i class="icons icons_small icon_1"></i>
+              <h3>Худ.Дисциплины</h3>
+              <p>Знание основных дисциплин в области дизайна (цветоведение, композиция, типографика и др.</p>
+            </div>
+            <div class="icon_box col-md-4">
+              <i class="icons icons_small icon_2"></i>
+              <h3>web технологии</h3>
+              <p>Умение разрабатывать концепции дизайна с учетом usability; Знание принципов web-технологий.</p>
+            </div>
+            <div class="icon_box col-md-3">
+              <i class="icons icons_small icon_3"></i>
+              <h3>графические редакторы</h3>
+              <p>Профессиональное владение графическими программами Photoshop, Illustrator, InDesign.</p>
+            </div>
+          </div>
+        </div>
         <div class="swiper-slide" id="main">
           <h1>Zen<span>box</span></h1>
           <h3>Создание сайтов под ключ</h3>
@@ -73,11 +98,6 @@
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
-  <!-- HelloPreload -->
-  <style type="text/css">#hellopreloader>p{display:none;}#hellopreloader_preload{display: block;position: fixed;z-index: 99999;top: 0;left: 0;width: 100%;height: 100%;min-width: 1000px;background: #000000 url(img/puff.svg) center center no-repeat;background-size:97px;}</style>
-  <div id="hellopreloader"><div id="hellopreloader_preload"></div><p><a href="http://hello-site.ru">Hello-Site.ru. Бесплатный конструктор сайтов.</a></p></div>
-  <script type="text/javascript">var hellopreloader = document.getElementById("hellopreloader_preload");function fadeOutnojquery(el){el.style.opacity = 1;var interhellopreloader = setInterval(function(){el.style.opacity = el.style.opacity - 0.05;if (el.style.opacity <=0.05){ clearInterval(interhellopreloader);hellopreloader.style.display = "none";}},16);}window.onload = function(){setTimeout(function(){fadeOutnojquery(hellopreloader);},500);};</script>
-  
   <!--Myanimate css-->
   <script defer >
     $(document).ready(function() {
