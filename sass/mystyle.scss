@@ -118,8 +118,8 @@ html{
             }
           }
         }
-        #first_vert,
-        #second_vert{
+        .first_vert,
+        .second_vert{
           .row{
             padding-bottom: 3%;
             &.first{
@@ -135,11 +135,12 @@ html{
 
           }
         }
-        &#dis_skill{
+        &#dis_skill,
+        &#dev_skill{
           .top{
             position: relative;
             left: -23.1%;
-            margin-top: 10%;
+            margin-top: 14%;
             text-align: left;
             margin-bottom: 10%;
             *{
@@ -181,10 +182,20 @@ html{
             }
           }
         }
-        .swiper-container-v{
-          #first{
-            background-color: gray;
+        &#dev_skill{
+          .top{
+            top:10%;
+            left: -17%;
+            margin-bottom: 3%;
           }
+          .foot{
+            p{
+              text-align: left;
+            }
+          }
+        }
+        .swiper-container-v,
+        .swiper-container-v1{
           .swiper-slide-active{
             width: 100%;
             height: 100%!important;

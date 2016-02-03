@@ -23,7 +23,7 @@ $(document).ready(function() {
   var pageName = ["Нулевой", "Портфолио", "Навыки", "Главная", "Навыки", "Портфолио"],
    swiperH = new Swiper('.swiper-container-h', {
     // Optional parameters 
-    	initialSlide: 2,
+    	initialSlide: 3,
     	grabCursor: true,
     	pagination: '.swiper-pagination-h',
     	paginationClickable: true,
@@ -34,6 +34,13 @@ $(document).ready(function() {
   });
   var swiperV = new Swiper('.swiper-container-v', {
       pagination: '.swiper-pagination-v',
+      paginationClickable: true,
+      direction: 'vertical',
+      mousewheelControl: true,
+      speed: 500
+  });
+    var swiperV = new Swiper('.swiper-container-v1', {
+      pagination: '.swiper-pagination-v1',
       paginationClickable: true,
       direction: 'vertical',
       mousewheelControl: true,
