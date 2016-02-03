@@ -33,6 +33,9 @@ html{
     h3{
       font-size: $fs*1.06;
     }
+    .empty_box{
+      visibility: hidden;
+    }
     //Sweper
     .swiper-container{
       width: 100%;
@@ -72,10 +75,14 @@ html{
         @include justify-content($justify);
         @include align-items ($al-items);
         flex-direction:column;
-        &#main{
-          background-image: url('../img/bg01_2.jpg');
+        &#main,
+        &#dev_port{
+          background-image: url('../img/bg04_2.jpg');
           background-size: cover;
           background-position: top center;
+        }
+        &#main{
+          background-image: url('../img/bg01_2.jpg');
           *{
             letter-spacing: 1.5pt;
           }
@@ -119,20 +126,19 @@ html{
           }
         }
         .first_vert,
-        .second_vert{
+        .second_vert,
+        &#dev_port{
           .row{
             padding-bottom: 3%;
             &.first{
               margin-top: 16%;
             }
             .min_port{
-
               a{
                 display: inline-block;
 
               }
             }
-
           }
         }
         &#dis_skill,
