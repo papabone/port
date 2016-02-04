@@ -2,7 +2,6 @@
 @import "_mymixins.scss";
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,600&subset=latin,cyrillic);
 @import "../css/fonts/roboto.css";
-@import "_swiper.min.scss";
 @import "_color.scss";
 @import "_icons.scss";
 @import "_adaptation.scss";
@@ -70,6 +69,9 @@ html{
           }
         }
       }
+      .swiper-container-vertical>.swiper-pagination-bullets {
+        right: 20px;
+      }
       .swiper-slide{
         @include flexbox();
         @include justify-content($justify);
@@ -77,12 +79,21 @@ html{
         flex-direction:column;
         &#main,
         &#dev_port{
-          background-image: url('../img/bg04_2.jpg');
+          background-image: url('../img/bg05_test.jpg');
           background-size: cover;
           background-position: top center;
         }
+        .swiper-container-v{
+          background-image: url('../img/bg01_test.jpg');
+        }
+        &#dis_skill{
+          background-image: url('../img/bg02_test.jpg');
+        }
+        &#dev_skill{
+          background-image: url('../img/bg04_test.jpg');
+        }
         &#main{
-          background-image: url('../img/bg01_2.jpg');
+          background-image: url('../img/bg03_test.jpg');
           *{
             letter-spacing: 1.5pt;
           }
