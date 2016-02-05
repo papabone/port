@@ -27,14 +27,12 @@ body{
     		border-left-color:rgba(225,225,225,0.15);
     	}
     }
-  }  
-  #main{
-  	h1{
-  		&::first-letter{
-  			color:$active;
-  		}
-  	}
   }
+	.swiper-slide#main{
+		h1>span#first_letter{
+			color:$active;
+		}
+	}
 	.swiper-container-v,
 	.swiper-container-v1 {
 		.swiper-pagination-bullet{

@@ -12,11 +12,10 @@
 
   <title>Портфолио</title>
    
-  <style> html body{background: url(img/bg.jpg) top center repeat #000; -webkit-background-size: cover; background-size: cover;}</style>
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <style> html body{background: url(img/bg.jpg) top center repeat #000; -webkit-background-size: cover; background-size: cover;}html,body{position:relative;height:100%}body{margin:0;padding:0}.swiper-container{width:100%;height:100%}.swiper-slide{display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;align-items:center}</style>
+
    <!-- Swiper slider -->
-  <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="css/myswiper.min.css">
   
   <!--favicon-->
   <link rel="shortcut icon" href="img/favicon.png" type="image/png">
@@ -132,7 +131,7 @@
           </div>
         </div>
         <div class="swiper-slide" id="main">
-          <h1>Zen<span>box</span></h1>
+          <h1><span id="first_letter">Z</span>en<span id="second_word">box</span></h1>
           <h3>Создание сайтов под ключ</h3>
           <p>Напишите нам сообщение:</p>
           <a href="#" class="button">Связаться</a>
@@ -272,7 +271,13 @@
   
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="js/jQuery.js"></script>
-
+  
+  <!--Bootstrap css-->
+  <script defer >
+    $(document).ready(function() {
+        $("head").append("<link rel='stylesheet' type='text/css' href='css/bootstrap.min.css' />");
+    });
+  </script>
   <!--Myanimate css-->
   <script defer >
     $(document).ready(function() {
