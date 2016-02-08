@@ -16,6 +16,8 @@
 
    <!-- Swiper slider -->
   <link rel="stylesheet" type="text/css" href="css/myswiper.min.css">
+  <!-- Swiper slider -->
+  <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
   
   <!--favicon-->
   <link rel="shortcut icon" href="img/favicon.png" type="image/png">
@@ -140,7 +142,35 @@
           <h1><span id="first_letter">Z</span>en<span id="second_word">box</span></h1>
           <h3>Создание сайтов под ключ</h3>
           <p>Напишите нам сообщение:</p>
-          <a href="#" class="button">Связаться</a>
+          <!-- link that opens popup -->
+          <a class="popup-with-form button" href="#test-form">Связаться</a>
+
+          <!-- form itself -->
+          <form id="test-form" class="white-popup-block mfp-hide">
+          <h2>Здравствуйте!</h2>
+            <fieldset style="border:0;">
+              <p>Оставте пожалуйста восое сообщение, указав при этом свою контактную информацию, чтобы мы могли связаться с Вами. Так же Вы можете указать предпочтительные для Вас формы связи и мы свяжемся с Вами с их помощью.</p>
+              <ol>
+                <li>
+                  <label for="name">Как к Вам обращаться?</label>
+                  <input id="name" name="name" placeholder="Name" type="text">
+                </li>
+                <li>
+                  <label for="email">Email</label>
+                  <input id="email" name="email" placeholder="Ваш@e-mail.com" required="" type="email">
+                </li>
+                <li>
+                  <label for="phone">Phone</label>
+                  <input id="phone" name="phone" placeholder="Eg. +447500000000" type="tel">
+                </li>
+                <li>
+                  <label for="textarea">Напишите сообщене</label><br>
+                  <textarea id="textarea">Try to resize me to see how popup CSS-based resizing works.</textarea>
+                </li>  
+              </ol>  
+            </fieldset>
+            <li><input type="submit" value="Отправить"></li>
+          </form>
           <div class="flex-block">
             <div class="wrap left">
               <h2>Дизайнер</h2>
@@ -276,6 +306,7 @@
   
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="js/jQuery.js"></script>
+
   
   <!--Bootstrap css-->
   <script defer >
@@ -300,6 +331,8 @@
   <script src="js/bootstrap.min.js"></script>
   <!-- Подключаем карусель Swipper-->
   <script src="js/swiper.jquery.min.js"></script>
+  <!-- Подключаем карусель Swipper-->
+  <script src="js/jquery.magnific-popup.min.js"></script>
   <!--Мой js-->
   <script src="js/common.js"></script>
 
