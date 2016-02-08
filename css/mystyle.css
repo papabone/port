@@ -206,51 +206,52 @@ html body .swiper-container .swiper-slide {
   flex-direction: column;
 }
 /* line 79, ../sass/mystyle.scss */
-html body .swiper-container .swiper-slide#main, html body .swiper-container .swiper-slide#dev_port {
-  background-image: url("../img/bg05_test.jpg");
+html body .swiper-container .swiper-slide#main,
+html body .swiper-container .swiper-slide .swiper-container-v, html body .swiper-container .swiper-slide#dis_skill, html body .swiper-container .swiper-slide#dev_skill, html body .swiper-container .swiper-slide#dev_port {
+  background-image: url("../img/bg05_1.jpg");
   background-size: cover;
   background-position: top center;
 }
-/* line 85, ../sass/mystyle.scss */
-html body .swiper-container .swiper-slide .swiper-container-v {
-  background-image: url("../img/bg01_test.jpg");
-}
 /* line 88, ../sass/mystyle.scss */
-html body .swiper-container .swiper-slide#dis_skill {
-  background-image: url("../img/bg02_test.jpg");
+html body .swiper-container .swiper-slide .swiper-container-v {
+  background-image: url("../img/bg01_1.jpg");
 }
 /* line 91, ../sass/mystyle.scss */
-html body .swiper-container .swiper-slide#dev_skill {
-  background-image: url("../img/bg04_test.jpg");
+html body .swiper-container .swiper-slide#dis_skill {
+  background-image: url("../img/bg02_1.jpg");
 }
 /* line 94, ../sass/mystyle.scss */
-html body .swiper-container .swiper-slide#main {
-  background-image: url("../img/bg03_test.jpg");
+html body .swiper-container .swiper-slide#dev_skill {
+  background-image: url("../img/bg04_1.jpg");
 }
-/* line 96, ../sass/mystyle.scss */
+/* line 97, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#main {
+  background-image: url("../img/bg03_1.jpg");
+}
+/* line 99, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#main * {
   letter-spacing: 1.5pt;
 }
-/* line 99, ../sass/mystyle.scss */
+/* line 102, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#main h1 {
   margin-top: 10%;
   letter-spacing: 10pt;
 }
-/* line 102, ../sass/mystyle.scss */
+/* line 105, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#main h1 span#first_letter {
   padding-right: 2%;
 }
-/* line 105, ../sass/mystyle.scss */
+/* line 108, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#main h1 span#second_word {
   padding-left: 1%;
   letter-spacing: 5pt;
 }
-/* line 110, ../sass/mystyle.scss */
+/* line 113, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#main h3 {
   margin-bottom: 12%;
   font-weight: normal;
 }
-/* line 114, ../sass/mystyle.scss */
+/* line 117, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#main .button {
   border-width: 1px;
   border-style: solid;
@@ -262,61 +263,61 @@ html body .swiper-container .swiper-slide#main .button {
   text-transform: uppercase;
   text-decoration: none;
 }
-/* line 125, ../sass/mystyle.scss */
+/* line 128, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#main .wrap {
   position: relative;
   float: right;
 }
-/* line 128, ../sass/mystyle.scss */
+/* line 131, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#main .wrap.right {
   left: 38vw;
   text-align: right;
 }
-/* line 132, ../sass/mystyle.scss */
+/* line 135, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#main .wrap.left {
   right: 38vw;
   text-align: left;
 }
-/* line 136, ../sass/mystyle.scss */
+/* line 139, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#main .wrap p {
   margin: 10px 0;
 }
-/* line 144, ../sass/mystyle.scss */
+/* line 147, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide .first_vert .row,
 html body .swiper-container .swiper-slide .second_vert .row, html body .swiper-container .swiper-slide#dev_port .row {
   padding-bottom: 3%;
 }
-/* line 146, ../sass/mystyle.scss */
+/* line 149, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide .first_vert .row.first,
 html body .swiper-container .swiper-slide .second_vert .row.first, html body .swiper-container .swiper-slide#dev_port .row.first {
   margin-top: 16%;
 }
-/* line 150, ../sass/mystyle.scss */
+/* line 153, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide .first_vert .row .min_port a,
 html body .swiper-container .swiper-slide .second_vert .row .min_port a, html body .swiper-container .swiper-slide#dev_port .row .min_port a {
   display: inline-block;
 }
-/* line 159, ../sass/mystyle.scss */
+/* line 162, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#dis_skill .top, html body .swiper-container .swiper-slide#dev_skill .top {
   position: relative;
-  left: -23.1%;
-  margin-top: 25%;
+  left: -22.8%;
+  margin-top: 22%;
   text-align: left;
-  margin-bottom: 5%;
+  margin-bottom: 8%;
 }
-/* line 165, ../sass/mystyle.scss */
+/* line 168, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#dis_skill .top *, html body .swiper-container .swiper-slide#dev_skill .top * {
   padding: 10px 20px;
   float: left;
 }
-/* line 169, ../sass/mystyle.scss */
+/* line 172, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#dis_skill .top h2, html body .swiper-container .swiper-slide#dev_skill .top h2 {
   font-size: 27pt;
   font-weight: 600;
   text-transform: none;
   letter-spacing: 3.5pt;
 }
-/* line 175, ../sass/mystyle.scss */
+/* line 178, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#dis_skill .top h4, html body .swiper-container .swiper-slide#dev_skill .top h4 {
   font-size: 12.72pt;
   letter-spacing: 1pt;
@@ -325,44 +326,48 @@ html body .swiper-container .swiper-slide#dis_skill .top h4, html body .swiper-c
   border-left-width: 1px;
   border-left-style: solid;
 }
-/* line 185, ../sass/mystyle.scss */
+/* line 188, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#dis_skill .foot .swiper-slide, html body .swiper-container .swiper-slide#dev_skill .foot .swiper-slide {
   padding-bottom: 25%;
 }
-/* line 187, ../sass/mystyle.scss */
-html body .swiper-container .swiper-slide#dis_skill .foot .swiper-slide *, html body .swiper-container .swiper-slide#dev_skill .foot .swiper-slide * {
+/* line 190, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#dis_skill .foot .swiper-slide .row, html body .swiper-container .swiper-slide#dev_skill .foot .swiper-slide .row {
+  width: 100%;
+}
+/* line 192, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#dis_skill .foot .swiper-slide .row *, html body .swiper-container .swiper-slide#dev_skill .foot .swiper-slide .row * {
   text-align: center;
   padding: 10px;
 }
-/* line 190, ../sass/mystyle.scss */
-html body .swiper-container .swiper-slide#dis_skill .foot .swiper-slide * h3, html body .swiper-container .swiper-slide#dev_skill .foot .swiper-slide * h3 {
+/* line 195, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#dis_skill .foot .swiper-slide .row * h3, html body .swiper-container .swiper-slide#dev_skill .foot .swiper-slide .row * h3 {
   font-weight: 600;
 }
-/* line 193, ../sass/mystyle.scss */
-html body .swiper-container .swiper-slide#dis_skill .foot .swiper-slide * p, html body .swiper-container .swiper-slide#dev_skill .foot .swiper-slide * p {
+/* line 198, ../sass/mystyle.scss */
+html body .swiper-container .swiper-slide#dis_skill .foot .swiper-slide .row * p, html body .swiper-container .swiper-slide#dev_skill .foot .swiper-slide .row * p {
   font-size: 10.32pt;
   opacity: 0.6;
   font-style: normal;
   line-height: 2.0;
 }
-/* line 201, ../sass/mystyle.scss */
+/* line 207, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#dis_skill .foot .col-md-4, html body .swiper-container .swiper-slide#dev_skill .foot .col-md-4 {
   padding-right: 5%;
   padding-left: 5%;
 }
-/* line 208, ../sass/mystyle.scss */
+/* line 214, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#dev_skill .top {
   left: -17%;
 }
-/* line 212, ../sass/mystyle.scss */
+/* line 218, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#dev_skill .foot .swiper-slide {
   padding-bottom: 15%;
 }
-/* line 214, ../sass/mystyle.scss */
+/* line 220, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#dev_skill .foot .swiper-slide p {
   text-align: left;
 }
-/* line 222, ../sass/mystyle.scss */
+/* line 228, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide .swiper-container-v .swiper-slide-active,
 html body .swiper-container .swiper-slide .swiper-container-v1 .swiper-slide-active {
   width: 100%;

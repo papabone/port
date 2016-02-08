@@ -30,6 +30,7 @@ $(document).ready(function() {
     	paginationBulletRender: function (index, className) {
         return '<span class="' + className + '">' + pageName[(index+1)] + '</span>';
       },
+      keyboardControl: true,
       speed: 1000
   });
   var swiperV = new Swiper('.swiper-container-v', {
@@ -37,6 +38,7 @@ $(document).ready(function() {
       paginationClickable: true,
       direction: 'vertical',
       mousewheelControl: true,
+      keyboardControl: true,
       speed: 500
   });
     var swiperV = new Swiper('.swiper-container-v1', {
@@ -44,6 +46,7 @@ $(document).ready(function() {
       paginationClickable: true,
       direction: 'vertical',
       mousewheelControl: true,
+      keyboardControl: true,
       speed: 1000
   });
          
