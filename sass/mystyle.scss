@@ -159,9 +159,9 @@ html{
           .top{
             position: relative;
             left: -23.1%;
-            margin-top: 14%;
+            margin-top: 25%;
             text-align: left;
-            margin-bottom: 10%;
+            margin-bottom: 5%;
             *{
               padding: 10px 20px;
               float: left;
@@ -182,17 +182,20 @@ html{
             }
           }
           .foot{
-            *{
-              text-align: center;
-              padding: 10px;
-              h3{
-                font-weight: 600;
-              }
-              p{
-                font-size: $fs*0.86;
-                opacity: 0.6;
-                font-style: normal;
-                line-height: 2.0;
+            .swiper-slide{
+              padding-bottom: 25%;
+                *{
+                text-align: center;
+                padding: 10px;
+                h3{
+                  font-weight: 600;
+                }
+                p{
+                  font-size: $fs*0.86;
+                  opacity: 0.6;
+                  font-style: normal;
+                  line-height: 2.0;
+                }
               }
             }
             .col-md-4{
@@ -203,13 +206,14 @@ html{
         }
         &#dev_skill{
           .top{
-            top:10%;
-            left: -17%;
-            margin-bottom: 3%;
+            left: -17%;  
           }
           .foot{
-            p{
-              text-align: left;
+            .swiper-slide{
+              padding-bottom: 15%;
+              p{
+                text-align: left;
+              }
             }
           }
         }

@@ -44,7 +44,7 @@ $(document).ready(function() {
       paginationClickable: true,
       direction: 'vertical',
       mousewheelControl: true,
-      speed: 500
+      speed: 1000
   });
          
 });
