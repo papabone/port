@@ -42,28 +42,29 @@ html{
         top:5%;
         bottom: 90%;
         .swiper-pagination-bullet{
-          text-transform: uppercase;
-          font-weight: 100;
+          font-size: $fs*1.21;
+          font-weight: normal;
           width: auto;
           height: auto;
           padding:0 3%;
           background-color: transparent;
           border-radius: 0;
           @include transit($transit);
-          opacity: 0.7;
+          opacity: 0.4;
           position: relative;
         }
         .swiper-pagination-bullet-active{         
-          font-size: 1.19*$fs;
           opacity: 1;
+          font-weight: 500;
           &::after{
             content: '';
             display: inherit;
             position: absolute;
             bottom:-5%;
-            left:30%;
-            width: 40%;
-            border-width: 1px;
+            left:35%;
+            width: 30%;
+            border-width: 0;
+            border-bottom-width: 1px;
             border-style: solid;
           }
         }

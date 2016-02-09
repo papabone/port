@@ -11,7 +11,7 @@ body .active,
 body a:active,
 body a:hover,
 body .swiper-pagination-bullet-active {
-  color: #f51212;
+  color: #fff;
 }
 /* line 16, ../sass/_color.scss */
 body .active::after,
@@ -158,21 +158,21 @@ html body .swiper-container .swiper-pagination-h {
 }
 /* line 44, ../sass/mystyle.scss */
 html body .swiper-container .swiper-pagination-h .swiper-pagination-bullet {
-  text-transform: uppercase;
-  font-weight: 100;
+  font-size: 14.52pt;
+  font-weight: normal;
   width: auto;
   height: auto;
   padding: 0 3%;
   background-color: transparent;
   border-radius: 0;
   transition: all 1s ease 0s;
-  opacity: 0.7;
+  opacity: 0.4;
   position: relative;
 }
 /* line 56, ../sass/mystyle.scss */
 html body .swiper-container .swiper-pagination-h .swiper-pagination-bullet-active {
-  font-size: 14.28pt;
   opacity: 1;
+  font-weight: 500;
 }
 /* line 59, ../sass/mystyle.scss */
 html body .swiper-container .swiper-pagination-h .swiper-pagination-bullet-active::after {
@@ -180,16 +180,17 @@ html body .swiper-container .swiper-pagination-h .swiper-pagination-bullet-activ
   display: inherit;
   position: absolute;
   bottom: -5%;
-  left: 30%;
-  width: 40%;
-  border-width: 1px;
+  left: 35%;
+  width: 30%;
+  border-width: 0;
+  border-bottom-width: 1px;
   border-style: solid;
 }
-/* line 71, ../sass/mystyle.scss */
+/* line 72, ../sass/mystyle.scss */
 html body .swiper-container .swiper-container-vertical > .swiper-pagination-bullets {
   right: 20px;
 }
-/* line 74, ../sass/mystyle.scss */
+/* line 75, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -205,53 +206,53 @@ html body .swiper-container .swiper-slide {
   align-items: center;
   flex-direction: column;
 }
-/* line 79, ../sass/mystyle.scss */
+/* line 80, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#main,
 html body .swiper-container .swiper-slide .swiper-container-v, html body .swiper-container .swiper-slide#dis_skill, html body .swiper-container .swiper-slide#dev_skill, html body .swiper-container .swiper-slide#dev_port {
   background-image: url("../img/bg05_1.jpg");
   background-size: cover;
   background-position: top center;
 }
-/* line 88, ../sass/mystyle.scss */
+/* line 89, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide .swiper-container-v {
   background-image: url("../img/bg01_1.jpg");
 }
-/* line 91, ../sass/mystyle.scss */
+/* line 92, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#dis_skill {
   background-image: url("../img/bg02_1.jpg");
 }
-/* line 94, ../sass/mystyle.scss */
+/* line 95, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#dev_skill {
   background-image: url("../img/bg04_1.jpg");
 }
-/* line 97, ../sass/mystyle.scss */
+/* line 98, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#main {
   background-image: url("../img/bg03_1.jpg");
 }
-/* line 99, ../sass/mystyle.scss */
+/* line 100, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#main * {
   letter-spacing: 1.5pt;
 }
-/* line 102, ../sass/mystyle.scss */
+/* line 103, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#main h1 {
   margin-top: 10%;
   letter-spacing: 10pt;
 }
-/* line 105, ../sass/mystyle.scss */
+/* line 106, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#main h1 span#first_letter {
   padding-right: 2%;
 }
-/* line 108, ../sass/mystyle.scss */
+/* line 109, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#main h1 span#second_word {
   padding-left: 1%;
   letter-spacing: 5pt;
 }
-/* line 113, ../sass/mystyle.scss */
+/* line 114, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#main h3 {
   margin-bottom: 12%;
   font-weight: normal;
 }
-/* line 117, ../sass/mystyle.scss */
+/* line 118, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#main .button {
   border-width: 1px;
   border-style: solid;
@@ -263,60 +264,60 @@ html body .swiper-container .swiper-slide#main .button {
   text-transform: uppercase;
   text-decoration: none;
 }
-/* line 128, ../sass/mystyle.scss */
+/* line 129, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#main .container {
   width: 100%;
   left: -10px;
   right: -10px;
 }
-/* line 132, ../sass/mystyle.scss */
+/* line 133, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#main .container .right {
   padding-right: 5%;
   text-align: right;
 }
-/* line 136, ../sass/mystyle.scss */
+/* line 137, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#main .container .left {
   text-align: left;
   padding-left: 5%;
 }
-/* line 140, ../sass/mystyle.scss */
+/* line 141, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#main .container p {
   margin: 10px 0;
 }
-/* line 148, ../sass/mystyle.scss */
+/* line 149, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide .first_vert .row,
 html body .swiper-container .swiper-slide .second_vert .row, html body .swiper-container .swiper-slide#dev_port .row {
   padding-bottom: 3%;
 }
-/* line 150, ../sass/mystyle.scss */
+/* line 151, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide .first_vert .row.first,
 html body .swiper-container .swiper-slide .second_vert .row.first, html body .swiper-container .swiper-slide#dev_port .row.first {
   margin-top: 16%;
 }
-/* line 154, ../sass/mystyle.scss */
+/* line 155, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide .first_vert .row .min_port a,
 html body .swiper-container .swiper-slide .second_vert .row .min_port a, html body .swiper-container .swiper-slide#dev_port .row .min_port a {
   display: inline-block;
 }
-/* line 163, ../sass/mystyle.scss */
+/* line 164, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#dis_skill .top, html body .swiper-container .swiper-slide#dev_skill .top {
   margin-top: 22%;
   left: 1%;
   height: 15%;
 }
-/* line 169, ../sass/mystyle.scss */
+/* line 170, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#dis_skill .top .row div *, html body .swiper-container .swiper-slide#dev_skill .top .row div * {
   padding: 10px 20px;
   float: left;
 }
-/* line 173, ../sass/mystyle.scss */
+/* line 174, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#dis_skill .top .row div h2, html body .swiper-container .swiper-slide#dev_skill .top .row div h2 {
   font-size: 27pt;
   font-weight: 600;
   text-transform: none;
   letter-spacing: 3.5pt;
 }
-/* line 179, ../sass/mystyle.scss */
+/* line 180, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#dis_skill .top .row div h4, html body .swiper-container .swiper-slide#dev_skill .top .row div h4 {
   font-size: 12.72pt;
   letter-spacing: 1pt;
@@ -325,67 +326,67 @@ html body .swiper-container .swiper-slide#dis_skill .top .row div h4, html body 
   border-left-width: 1px;
   border-left-style: solid;
 }
-/* line 191, ../sass/mystyle.scss */
+/* line 192, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#dis_skill .foot .swiper-slide, html body .swiper-container .swiper-slide#dev_skill .foot .swiper-slide {
   margin-top: 13%;
   padding-bottom: 25%;
 }
-/* line 194, ../sass/mystyle.scss */
+/* line 195, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#dis_skill .foot .swiper-slide .row, html body .swiper-container .swiper-slide#dev_skill .foot .swiper-slide .row {
   width: 100%;
 }
-/* line 196, ../sass/mystyle.scss */
+/* line 197, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#dis_skill .foot .swiper-slide .row *, html body .swiper-container .swiper-slide#dev_skill .foot .swiper-slide .row * {
   text-align: center;
   padding: 10px;
 }
-/* line 199, ../sass/mystyle.scss */
+/* line 200, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#dis_skill .foot .swiper-slide .row * h3, html body .swiper-container .swiper-slide#dev_skill .foot .swiper-slide .row * h3 {
   font-weight: 600;
 }
-/* line 202, ../sass/mystyle.scss */
+/* line 203, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#dis_skill .foot .swiper-slide .row * p, html body .swiper-container .swiper-slide#dev_skill .foot .swiper-slide .row * p {
   font-size: 10.32pt;
   opacity: 0.6;
   font-style: normal;
   line-height: 2.0;
 }
-/* line 212, ../sass/mystyle.scss */
+/* line 213, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#dis_skill .foot .row .col-md-4, html body .swiper-container .swiper-slide#dev_skill .foot .row .col-md-4 {
   padding-right: 5%;
   padding-left: 5%;
 }
-/* line 220, ../sass/mystyle.scss */
+/* line 221, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#dev_skill .top {
   left: 2.5%;
 }
-/* line 224, ../sass/mystyle.scss */
+/* line 225, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#dev_skill .foot .swiper-slide {
   padding-bottom: 15%;
 }
-/* line 226, ../sass/mystyle.scss */
+/* line 227, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#dev_skill .foot .swiper-slide.second {
   margin-top: 0;
 }
-/* line 229, ../sass/mystyle.scss */
+/* line 230, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#dev_skill .foot .swiper-slide .row {
   margin-bottom: 5%;
 }
-/* line 232, ../sass/mystyle.scss */
+/* line 233, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#dev_skill .foot .swiper-slide .row div h3 {
   padding: 0;
 }
-/* line 235, ../sass/mystyle.scss */
+/* line 236, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#dev_skill .foot .swiper-slide .row div p {
   text-align: left;
   padding: 0;
   margin: -1% -3% 0 -12%;
 }
-/* line 239, ../sass/mystyle.scss */
+/* line 240, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#dev_skill .foot .swiper-slide .row div p.right {
   margin: -1% 0% 0 -15%;
 }
-/* line 250, ../sass/mystyle.scss */
+/* line 251, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide .swiper-container-v .swiper-slide-active,
 html body .swiper-container .swiper-slide .swiper-container-v1 .swiper-slide-active {
   width: 100%;

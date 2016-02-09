@@ -12,7 +12,7 @@ body{
 	a:active,
 	a:hover,
 	.swiper-pagination-bullet-active{
-		color: $active;
+		color: $main;
 		&::after{
 			border-color: $active;
 		}
