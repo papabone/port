@@ -160,32 +160,35 @@ html{
         &#dis_skill,
         &#dev_skill{
           .top{
-            position: relative;
-            left: -22.8%;
             margin-top: 22%;
-            text-align: left;
-            margin-bottom: 8%;
-            *{
-              padding: 10px 20px;
-              float: left;
-            }
-            h2{
-              font-size: $fs*2.25;
-              font-weight: 600;
-              text-transform: none;
-              letter-spacing: 3.5pt;
-            }
-            h4{
-              font-size: $fs*1.06;
-              letter-spacing: 1pt;
-              font-weight: 600;
-              margin-top: 3%;
-              border-left-width: 1px;
-              border-left-style: solid;
+            left: 1%;
+            height: 15%;
+            .row{
+              div{
+                *{
+                  padding: 10px 20px;
+                  float: left;
+                }
+                h2{
+                  font-size: $fs*2.25;
+                  font-weight: 600;
+                  text-transform: none;
+                  letter-spacing: 3.5pt; 
+                }
+                h4{
+                  font-size: $fs*1.06;
+                  letter-spacing: 1pt;
+                  font-weight: 600;
+                  line-height: 15pt;
+                  border-left-width: 1px;
+                  border-left-style: solid;
+                }
+              }
             }
           }
           .foot{
             .swiper-slide{
+              margin-top: 13%;
               padding-bottom: 25%;
                 .row{
                   width: 100%;
@@ -204,15 +207,17 @@ html{
                 }  
               }
             }
+            .row{
             .col-md-4{
-              padding-right: 5%;
-              padding-left: 5%;
+                padding-right: 5%;
+                padding-left: 5%;
+              }
             }
           }
         }
         &#dev_skill{
           .top{
-            left: -17%;  
+            left: 2.5%;  
           }
           .foot{
             .swiper-slide{
