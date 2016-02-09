@@ -222,8 +222,24 @@ html{
           .foot{
             .swiper-slide{
               padding-bottom: 15%;
-              p{
-                text-align: left;
+              &.second{
+                margin-top: 0;
+              }
+              .row{
+                margin-bottom: 5%;
+                div{
+                  h3{
+                    padding:0;
+                  }
+                  p{
+                    text-align: left;
+                    padding: 0;
+                    margin: -1% -3% 0 -12%;
+                    &.right{
+                      margin: -1% 0% 0 -15%;
+                    }
+                  }
+                }
               }
             }
           }
