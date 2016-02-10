@@ -20,6 +20,12 @@ body{
 	#dev_skill,
 	#dev_port{
     background-color: rgba(255,255,255,0.5);
+    figure.effect-apollo:hover {
+    	background-color: rgba(0,0,0,0.7);
+    	p{
+    		border-color: $active;
+    	}
+    }
   }
   #dis_skill{
     .top{

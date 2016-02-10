@@ -3,6 +3,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,600&subset=latin,cyrillic);
 @import "_color.scss";
 @import "_icons.scss";
+@import "_myhover.scss";
 @import "_adaptation.scss";
 
 html{
@@ -154,7 +155,6 @@ html{
             .min_port{
               a{
                 display: inline-block;
-
               }
             }
           }
