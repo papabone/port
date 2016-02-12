@@ -17,15 +17,27 @@ body{
 			border-color: $active;
 		}
 	}
+	#contact-form{
+		background-color: rgba(8,16,38,0.7);
+		ul{
+			li{
+				input,textarea{
+					border-color: rgba(225,225,225,0.7);
+				}
+			}
+		}
+	}
+	figure.effect-apollo{
+		&:hover {
+  	background-color: rgba(0,0,0,0.7);
+  	}
+  	p{
+  		border-color: $active;
+  	}
+  }
 	#dev_skill,
 	#dev_port{
     background-color: rgba(255,255,255,0.5);
-    figure.effect-apollo:hover {
-    	background-color: rgba(0,0,0,0.7);
-    	p{
-    		border-color: $active;
-    	}
-    }
   }
   #dis_skill{
     .top{
