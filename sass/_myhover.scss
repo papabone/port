@@ -28,7 +28,7 @@ figure.effect-apollo p {
 	position: absolute;
 	right: 0;
 	bottom: 0;
-	margin: 3em;
+	margin: 3em 2em 2em 3em;
 	padding: 0 1em;
 	max-width: 300px;
 	border-right: 4px solid #fff;
@@ -38,7 +38,7 @@ figure.effect-apollo p {
 	transition: opacity 0.35s;
 }
 figure.effect-apollo:hover img {
-	opacity: 0.3;
+	opacity: 0.25;
 	-webkit-transform: scale3d(1,1,1);
 	transform: scale3d(1,1,1);
 }

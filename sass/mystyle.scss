@@ -226,9 +226,9 @@ html{
         &#dis_skill,
         &#dev_skill{
           .top{
-            margin-top: 22%;
-            left: 1%;
-            height: 15%;
+            margin-top: 27%;
+            left: 1.2%;
+            height:15%;
             .row{
               div{
                 *{
@@ -254,10 +254,17 @@ html{
           }
           .foot{
             .swiper-slide{
-              margin-top: 13%;
+              margin-top: 19%;
               padding-bottom: 25%;
                 .row{
+                  position: absolute;
+                  top: 0;
+                  left: 0;
                   width: 100%;
+                  &.second{
+                    top: 40%;
+                  }
+
                   *{
                   text-align: center;
                   padding: 10px;
@@ -283,7 +290,7 @@ html{
         }
         &#dev_skill{
           .top{
-            left: 2.5%;  
+            left: 2.7%;  
           }
           .foot{
             .swiper-slide{
@@ -294,6 +301,7 @@ html{
               .row{
                 margin-bottom: 5%;
                 div{
+
                   h3{
                     padding:0;
                   }
@@ -318,6 +326,23 @@ html{
           }
         }
       } 
+    }
+    //Size error
+    .size_error{
+      width: 100%;
+      height: 100%;
+      p{
+        position: absolute;
+        top: 40%;
+        bottom: 40%;
+        left: 20%;
+        right: 20%;
+        text-align: center;
+        font-weight: 600;
+        opacity: 0.5;
+      }
     }      
   }
 }
+
+
