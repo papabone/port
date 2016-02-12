@@ -30,7 +30,7 @@ body #contact-form ul li input, body #contact-form ul li textarea {
 }
 /* line 31, ../sass/_color.scss */
 body figure.effect-apollo:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(3, 12, 45, 0.8);
 }
 /* line 34, ../sass/_color.scss */
 body figure.effect-apollo p {
@@ -314,11 +314,11 @@ html body .swiper-container .swiper-slide .swiper-container-v, html body .swiper
 }
 /* line 92, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide .swiper-container-v {
-  background-image: url("../img/bg01_1.jpg");
+  background-image: url("../img/bg01_blue.jpg");
 }
 /* line 95, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#dis_skill {
-  background-image: url("../img/bg02_1.jpg");
+  background-image: url("../img/bg02_blue.jpg");
 }
 /* line 98, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#dev_skill {
@@ -326,7 +326,7 @@ html body .swiper-container .swiper-slide#dev_skill {
 }
 /* line 101, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#main {
-  background-image: url("../img/bg03_1.jpg");
+  background-image: url("../img/bg03_blue.jpg");
 }
 /* line 103, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#main * {
