@@ -8,10 +8,10 @@
 
 html{
   position: relative;
-  height: 100%;
+  height: 100vh;
   body{
     position: relative;
-    height: 100%;
+    height: 100vh;
     margin: 0;
     padding: 0;
     font-size: $fs;
@@ -37,7 +37,7 @@ html{
     //Sweper
     .swiper-container{
       width: 100%;
-      height: 100%;
+      height: 100vh;
       .swiper-pagination-h{
         top:5%;
         bottom: 90%;
@@ -107,7 +107,7 @@ html{
             display: none;
           }
           h1{
-            margin-top: 10%;
+            margin-top: 10vh;
             letter-spacing: 10pt;
             span#first_letter{
               padding-right: 2%;
@@ -118,17 +118,17 @@ html{
             }
           }
           h3{
-            margin-bottom: 12%;
+            margin-bottom: 12vh;
             font-weight: normal;
           }
           .button {
             border-width: 1px;
             border-style: solid;
-            padding: 1.8% 2.7%;
+            padding: 1.8vh 2.7vw;
             font-size: 1.15*$fs; 
             font-weight: bold; 
-            margin-top: 1.5%;
-            margin-bottom: 18%;
+            margin-top: 1.5vh;
+            margin-bottom: 18vh;
             text-transform: uppercase;
             text-decoration: none;
             background-color: transparent;
@@ -212,9 +212,9 @@ html{
         .second_vert,
         &#dev_port{
           .row{
-            padding-bottom: 3%;
+            padding-bottom: 3vh;
             &.first{
-              margin-top: 16%;
+              margin-top: 16vh;
             }
             .min_port{
               a{
@@ -226,9 +226,9 @@ html{
         &#dis_skill,
         &#dev_skill{
           .top{
-            margin-top: 27%;
+            margin-top: 27vh;
             left: 1.2%;
-            height:15%;
+            height:15vh;
             .row{
               div{
                 *{
@@ -254,15 +254,15 @@ html{
           }
           .foot{
             .swiper-slide{
-              margin-top: 19%;
-              padding-bottom: 25%;
+              margin-top: 15vh;
+              padding-bottom: 25vh;
                 .row{
                   position: absolute;
                   top: 0;
                   left: 0;
                   width: 100%;
                   &.second{
-                    top: 40%;
+                    top: 20vh;
                   }
 
                   *{
@@ -322,7 +322,7 @@ html{
         .swiper-container-v1{
           .swiper-slide-active{
             width: 100%;
-            height: 100%!important;
+            height: 100vh!important;
           }
         }
       } 
