@@ -164,7 +164,7 @@ figure.effect-apollo p {
   margin: 3em 2em 2em 3em;
   padding: 0 1em;
   max-width: 300px;
-  border-right: 4px solid #fff;
+  border-right: 1px solid #fff;
   text-align: right;
   opacity: 0;
   -webkit-transition: opacity 0.35s;
@@ -192,18 +192,6 @@ figure.effect-apollo:hover p {
   transition-delay: 0.1s;
 }
 
-@media (max-width: 1280px) {
-  /* line 9, ../sass/_adaptation.scss */
-  #dev_skill p {
-    font-size: 8.28pt !important;
-  }
-}
-@media (min-width: 992px) {
-  /* line 15, ../sass/_adaptation.scss */
-  .size_error {
-    display: none;
-  }
-}
 /* line 9, ../sass/mystyle.scss */
 html {
   position: relative;
@@ -477,9 +465,9 @@ html body .swiper-container .swiper-slide .second_vert .row .min_port a, html bo
 }
 /* line 228, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#dis_skill .top, html body .swiper-container .swiper-slide#dev_skill .top {
-  margin-top: 27vh;
+  margin-top: 25vh;
   left: 1.2%;
-  height: 15vh;
+  height: 18vh;
 }
 /* line 234, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#dis_skill .top .row div *, html body .swiper-container .swiper-slide#dev_skill .top .row div * {
@@ -504,7 +492,7 @@ html body .swiper-container .swiper-slide#dis_skill .top .row div h4, html body 
 }
 /* line 256, ../sass/mystyle.scss */
 html body .swiper-container .swiper-slide#dis_skill .foot .swiper-slide, html body .swiper-container .swiper-slide#dev_skill .foot .swiper-slide {
-  margin-top: 15vh;
+  margin-top: 12vh;
   padding-bottom: 25vh;
 }
 /* line 259, ../sass/mystyle.scss */
@@ -590,4 +578,161 @@ html body .size_error p {
   text-align: center;
   font-weight: 600;
   opacity: 0.5;
+}
+
+@media (max-width: 1280px) {
+  /* line 351, ../sass/mystyle.scss */
+  #dev_skill p {
+    font-size: 7.8pt !important;
+  }
+}
+@media (min-width: 992px) {
+  /* line 357, ../sass/mystyle.scss */
+  .size_error {
+    display: none;
+  }
+}
+@media (min-width: 1450px) {
+  /* line 366, ../sass/mystyle.scss */
+  html body {
+    font-size: 14pt;
+  }
+  /* line 368, ../sass/mystyle.scss */
+  html body h1,
+  html body h2,
+  html body h3 {
+    font-size: 78.4pt;
+  }
+  /* line 373, ../sass/mystyle.scss */
+  html body h2 {
+    font-size: 21.84pt;
+  }
+  /* line 376, ../sass/mystyle.scss */
+  html body h3 {
+    font-size: 14.84pt;
+  }
+  /* line 381, ../sass/mystyle.scss */
+  html body .swiper-container .swiper-pagination-h .swiper-pagination-bullet {
+    font-size: 16.94pt;
+  }
+  /* line 387, ../sass/mystyle.scss */
+  html body .swiper-container .swiper-slide#main .button {
+    font-size: 16.1pt;
+  }
+  /* line 391, ../sass/mystyle.scss */
+  html body .swiper-container .swiper-slide#main #contact-form h2 {
+    font-size: 15.82pt;
+  }
+  /* line 396, ../sass/mystyle.scss */
+  html body .swiper-container .swiper-slide#main #contact-form ul li input, html body .swiper-container .swiper-slide#main #contact-form ul li textarea {
+    font-size: 12.88pt;
+  }
+  /* line 408, ../sass/mystyle.scss */
+  html body .swiper-container .swiper-slide#dis_skill .top .row div h2, html body .swiper-container .swiper-slide#dev_skill .top .row div h2 {
+    font-size: 31.5pt;
+  }
+  /* line 411, ../sass/mystyle.scss */
+  html body .swiper-container .swiper-slide#dis_skill .top .row div h4, html body .swiper-container .swiper-slide#dev_skill .top .row div h4 {
+    font-size: 14.84pt;
+  }
+  /* line 420, ../sass/mystyle.scss */
+  html body .swiper-container .swiper-slide#dis_skill .foot .swiper-slide .row p, html body .swiper-container .swiper-slide#dev_skill .foot .swiper-slide .row p {
+    font-size: 12.04pt;
+  }
+}
+@media (min-width: 1600px) {
+  /* line 436, ../sass/mystyle.scss */
+  html body {
+    font-size: 16pt;
+  }
+  /* line 438, ../sass/mystyle.scss */
+  html body h1,
+  html body h2,
+  html body h3 {
+    font-size: 89.6pt;
+  }
+  /* line 443, ../sass/mystyle.scss */
+  html body h2 {
+    font-size: 24.96pt;
+  }
+  /* line 446, ../sass/mystyle.scss */
+  html body h3 {
+    font-size: 16.96pt;
+  }
+  /* line 451, ../sass/mystyle.scss */
+  html body .swiper-container .swiper-pagination-h .swiper-pagination-bullet {
+    font-size: 19.36pt;
+  }
+  /* line 457, ../sass/mystyle.scss */
+  html body .swiper-container .swiper-slide#main .button {
+    font-size: 18.4pt;
+  }
+  /* line 461, ../sass/mystyle.scss */
+  html body .swiper-container .swiper-slide#main #contact-form h2 {
+    font-size: 18.08pt;
+  }
+  /* line 466, ../sass/mystyle.scss */
+  html body .swiper-container .swiper-slide#main #contact-form ul li input, html body .swiper-container .swiper-slide#main #contact-form ul li textarea {
+    font-size: 14.72pt;
+  }
+  /* line 478, ../sass/mystyle.scss */
+  html body .swiper-container .swiper-slide#dis_skill .top .row div h2, html body .swiper-container .swiper-slide#dev_skill .top .row div h2 {
+    font-size: 36pt;
+  }
+  /* line 481, ../sass/mystyle.scss */
+  html body .swiper-container .swiper-slide#dis_skill .top .row div h4, html body .swiper-container .swiper-slide#dev_skill .top .row div h4 {
+    font-size: 16.96pt;
+  }
+  /* line 490, ../sass/mystyle.scss */
+  html body .swiper-container .swiper-slide#dis_skill .foot .swiper-slide .row p, html body .swiper-container .swiper-slide#dev_skill .foot .swiper-slide .row p {
+    font-size: 13.76pt;
+  }
+}
+@media (max-width: 1080px) {
+  /* line 506, ../sass/mystyle.scss */
+  html body {
+    font-size: 10pt;
+  }
+  /* line 508, ../sass/mystyle.scss */
+  html body h1,
+  html body h2,
+  html body h3 {
+    font-size: 56pt;
+  }
+  /* line 513, ../sass/mystyle.scss */
+  html body h2 {
+    font-size: 15.6pt;
+  }
+  /* line 516, ../sass/mystyle.scss */
+  html body h3 {
+    font-size: 10.6pt;
+  }
+  /* line 521, ../sass/mystyle.scss */
+  html body .swiper-container .swiper-pagination-h .swiper-pagination-bullet {
+    font-size: 12.1pt;
+  }
+  /* line 527, ../sass/mystyle.scss */
+  html body .swiper-container .swiper-slide#main .button {
+    font-size: 11.5pt;
+  }
+  /* line 531, ../sass/mystyle.scss */
+  html body .swiper-container .swiper-slide#main #contact-form h2 {
+    font-size: 11.3pt;
+  }
+  /* line 536, ../sass/mystyle.scss */
+  html body .swiper-container .swiper-slide#main #contact-form ul li input, html body .swiper-container .swiper-slide#main #contact-form ul li textarea {
+    font-size: 9.2pt;
+  }
+  /* line 548, ../sass/mystyle.scss */
+  html body .swiper-container .swiper-slide#dis_skill .top .row div h2, html body .swiper-container .swiper-slide#dev_skill .top .row div h2 {
+    font-size: 22.5pt;
+  }
+  /* line 551, ../sass/mystyle.scss */
+  html body .swiper-container .swiper-slide#dis_skill .top .row div h4, html body .swiper-container .swiper-slide#dev_skill .top .row div h4 {
+    font-size: 10.6pt;
+  }
+  /* line 560, ../sass/mystyle.scss */
+  html body .swiper-container .swiper-slide#dis_skill .foot .swiper-slide .row p, html body .swiper-container .swiper-slide#dev_skill .foot .swiper-slide .row p {
+    font-size: 8.6pt;
+  }
 }

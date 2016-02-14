@@ -4,7 +4,7 @@
 @import "_color.scss";
 @import "_icons.scss";
 @import "_myhover.scss";
-@import "_adaptation.scss";
+
 
 html{
   position: relative;
@@ -226,9 +226,9 @@ html{
         &#dis_skill,
         &#dev_skill{
           .top{
-            margin-top: 27vh;
+            margin-top: 25vh;
             left: 1.2%;
-            height:15vh;
+            height:18vh;
             .row{
               div{
                 *{
@@ -254,7 +254,7 @@ html{
           }
           .foot{
             .swiper-slide{
-              margin-top: 15vh;
+              margin-top: 12vh;
               padding-bottom: 25vh;
                 .row{
                   position: absolute;
@@ -344,5 +344,231 @@ html{
     }      
   }
 }
+//ADAPTATION
+
+@media (max-width: 1280px){//навыки разраб не красиво слипался текст
+#dev_skill{
+  p{
+    font-size: $fs*0.65 !important;
+  }
+}
+}
+@media (min-width: 992px) {//убираем малые разрешения
+.size_error{
+  display: none;
+} 
+}
+
+//fonts-size
+@media (min-width: 1450px){
+  $fs:14pt;
+html{
+  body{
+    font-size: $fs; 
+    h1,
+    h2,
+    h3{
+      font-size: $fs*5.6;
+    }
+    h2{
+      font-size: $fs*1.56;
+    }
+    h3{
+      font-size: $fs*1.06;
+    }
+    .swiper-container{
+      .swiper-pagination-h{
+        .swiper-pagination-bullet{
+          font-size: $fs*1.21;
+        }
+      }
+      .swiper-slide{
+        &#main{
+          .button {
+            font-size: 1.15*$fs; 
+          }
+          #contact-form{
+            h2{
+              font-size: $fs*1.13;
+            }
+            ul{
+              li{
+                input,textarea{
+                  font-size: $fs*0.92;
+                }
+              }
+            }
+          }
+        }
+        &#dis_skill,
+        &#dev_skill{
+          .top{
+            .row{
+              div{
+                h2{
+                  font-size: $fs*2.25;
+                }
+                h4{
+                  font-size: $fs*1.06;
+                }
+              }
+            }
+          }
+          .foot{
+            .swiper-slide{
+              .row{
+                p{
+                  font-size: $fs*0.86;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+}
+ 
+@media (min-width: 1600px){
+  $fs:16pt;
+html{
+  body{
+    font-size: $fs; 
+    h1,
+    h2,
+    h3{
+      font-size: $fs*5.6;
+    }
+    h2{
+      font-size: $fs*1.56;
+    }
+    h3{
+      font-size: $fs*1.06;
+    }
+    .swiper-container{
+      .swiper-pagination-h{
+        .swiper-pagination-bullet{
+          font-size: $fs*1.21;
+        }
+      }
+      .swiper-slide{
+        &#main{
+          .button {
+            font-size: 1.15*$fs; 
+          }
+          #contact-form{
+            h2{
+              font-size: $fs*1.13;
+            }
+            ul{
+              li{
+                input,textarea{
+                  font-size: $fs*0.92;
+                }
+              }
+            }
+          }
+        }
+        &#dis_skill,
+        &#dev_skill{
+          .top{
+            .row{
+              div{
+                h2{
+                  font-size: $fs*2.25;
+                }
+                h4{
+                  font-size: $fs*1.06;
+                }
+              }
+            }
+          }
+          .foot{
+            .swiper-slide{
+              .row{
+                p{
+                  font-size: $fs*0.86;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+}
+ 
+@media (max-width: 1080px){
+  $fs:10pt;
+html{
+  body{
+    font-size: $fs; 
+    h1,
+    h2,
+    h3{
+      font-size: $fs*5.6;
+    }
+    h2{
+      font-size: $fs*1.56;
+    }
+    h3{
+      font-size: $fs*1.06;
+    }
+    .swiper-container{
+      .swiper-pagination-h{
+        .swiper-pagination-bullet{
+          font-size: $fs*1.21;
+        }
+      }
+      .swiper-slide{
+        &#main{
+          .button {
+            font-size: 1.15*$fs; 
+          }
+          #contact-form{
+            h2{
+              font-size: $fs*1.13;
+            }
+            ul{
+              li{
+                input,textarea{
+                  font-size: $fs*0.92;
+                }
+              }
+            }
+          }
+        }
+        &#dis_skill,
+        &#dev_skill{
+          .top{
+            .row{
+              div{
+                h2{
+                  font-size: $fs*2.25;
+                }
+                h4{
+                  font-size: $fs*1.06;
+                }
+              }
+            }
+          }
+          .foot{
+            .swiper-slide{
+              .row{
+                p{
+                  font-size: $fs*0.86;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+}
+
 
 
