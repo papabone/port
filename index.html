@@ -16,6 +16,9 @@
 
    <!-- Swiper slider -->
   <link rel="stylesheet" type="text/css" href="css/myswiper.min.css">
+  <!--Запрещаем для IE-->
+  <!--[if IE]><link href="css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <![endif]--> 
   
   <!--favicon-->
   <link rel="shortcut icon" href="img/favicon.png" type="image/png">
@@ -242,7 +245,7 @@
           <!-- link that opens popup -->
           <a class="button disappear" id="contact" href="#">Связаться</a>
           <!-- popup -->
-          <form id="contact-form">
+          <form id="contact-form" action="php/mypost.php" method="POST">
             <a href="#" id="esc"></a>
             <h2>Напишите нам сообщение</h2>
             <ul>
@@ -256,10 +259,10 @@
                 <input id="phone" name="phone" placeholder="Телефон" type="tel">
               </li>
               <li>
-                <textarea id="textarea" placeholder="Сообщение"></textarea>
+                <textarea id="textarea" name="message" required="" placeholder="Сообщение" cols= "450"></textarea>
               </li>  
             </ul>  
-            <input class="button" type="submit" id="submit"value="Отправить"></li>
+            <input class="button" type="submit" id="submit" value="Отправить">
           </form>
           <div class="container disappear">
             <div class="row">         
@@ -445,6 +448,9 @@
 
 <div class="size_error hidden-md hidden-xl">
   <p>Извините! сайт не поддерживает данный тип устройств. Попробуйте воспользоваться устройтвом с большим разрешением экрана.</p>
+</div>
+<div class="brous_error">
+  <p>Извините! сайт не поддерживает данный тип браузера. Попробуйте воспользоваться другим браузером...</p>
 </div>
   
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
