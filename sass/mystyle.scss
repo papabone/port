@@ -334,25 +334,22 @@ html{
           }
         }
       } 
-    }
-    //Size error
-    .size_error{
-      width: 100%;
-      height: 100%;
-      p{
-        position: absolute;
-        top: 40%;
-        bottom: 40%;
-        left: 20%;
-        right: 20%;
-        text-align: center;
-        font-weight: 600;
-        opacity: 0.5;
+      //Size error
+      .size_error{
+        width: 100%;
+        height: 100%;
+        p{
+          position: absolute;
+          top: 40%;
+          bottom: 40%;
+          left: 20%;
+          right: 20%;
+          text-align: center;
+          font-weight: 600;
+          opacity: 0.5;
+        }
       }
-    }
-    .brous_error{
-      display: none;
-    }      
+    }    
   }
 }
 //ADAPTATION

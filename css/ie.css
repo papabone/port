@@ -1,16 +1,21 @@
 /* line 3, ../sass/ie.scss */
-.swiper-container.swiper-container-h,
+.swiper-wrapper,
 .size_error {
   display: none !important;
 }
 
 /* line 7, ../sass/ie.scss */
 .brous_error {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   display: block;
   width: 100%;
   height: 100%;
 }
-/* line 11, ../sass/ie.scss */
+/* line 13, ../sass/ie.scss */
 .brous_error p {
   color: #fff;
   font-family: sans-serif;

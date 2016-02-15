@@ -10,12 +10,13 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Портфолио</title>
+  <title>Сайт под ключ</title>
    
-  <style> html body{background: url(img/bg.jpg) top center repeat #000; -webkit-background-size: cover; background-size: cover;}html,body{position:relative;height:100%}body{margin:0;padding:0}.swiper-container{width:100%;height:100%}.swiper-slide{display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;align-items:center}</style>
+  <style> html body{background: url(img/bg.jpg) top center repeat #000; -webkit-background-size: cover; background-size: cover;}html,body{position:relative;height:100%}body{margin:0;padding:0}.swiper-container{width:100%;height:100%}.swiper-slide{display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;align-items:center}/*IE error*/.brous_error{display: none;}</style>
 
    <!-- Swiper slider -->
   <link rel="stylesheet" type="text/css" href="css/myswiper.min.css">
+
   <!--Запрещаем для IE-->
   <!--[if IE]><link href="css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
   <![endif]--> 
@@ -27,17 +28,17 @@
 
 <body>
   <!-- HelloPreload -->
-  <style type="text/css">#hellopreloader>p{display:none;}#hellopreloader_preload{display: block;position: fixed;z-index: 99999;top: 0;left: 0;width: 100%;height: 100%;min-width: 1000px;background: #000000 url(img/puff.svg) center center no-repeat;background-size:97px;}</style>
-  <div id="hellopreloader"><div id="hellopreloader_preload"></div><p><a href="http://hello-site.ru">Hello-Site.ru. Бесплатный конструктор сайтов.</a></p></div>
+  <style type="text/css">#hellopreloader>p{display:none;}#hellopreloader_preload{display: block;position: fixed;z-index: 99999;top: 0;left: 0;width: 100%;height: 100%;min-width: 1000px;background: rgba(8,16,38,1) url(img/puff.svg) center center no-repeat;background-size:97px;}</style>
+  <div id="hellopreloader"><div id="hellopreloader_preload"></div></div>
   <script type="text/javascript">var hellopreloader = document.getElementById("hellopreloader_preload");function fadeOutnojquery(el){el.style.opacity = 1;var interhellopreloader = setInterval(function(){el.style.opacity = el.style.opacity - 0.05;if (el.style.opacity <=0.05){ clearInterval(interhellopreloader);hellopreloader.style.display = "none";}},16);}window.onload = function(){setTimeout(function(){fadeOutnojquery(hellopreloader);},500);};</script>
 <!-- SWEPER
   ================================================== -->
 
-    <div class="swiper-container swiper-container-h  hidden-xs hidden-sm">
+    <div class="swiper-container swiper-container-h">
       <!-- Additional required wrapper -->
-      <div class="swiper-wrapper ">
-        <!-- Slides -->
+      <div class="swiper-wrapper hidden-xs hidden-sm">
         
+        <!-- >>>>>>>>>>>>>>>>> Slides =====================-->
         <div class="swiper-slide" id="dis_port">
           <div class="swiper-container swiper-container-v">
             <div class="swiper-wrapper">
@@ -434,24 +435,32 @@
               </div>
             </div>
           </div>
-        </div>  
+        </div> 
+        !--=============== Slides <<<<<<<<<<<<<<<<<<< --> 
 
       </div>
+
       <!-- pagination -->
-      <div class="swiper-pagination swiper-pagination-h">
+      <div class="swiper-pagination swiper-pagination-h hidden-xs hidden-sm">
       </div>
+      
+      <!-- Прячем для малых -->
+      <div class="size_error hidden-md hidden-xl">
+        <p>Извините! сайт не поддерживает данный тип устройств. Попробуйте воспользоваться устройтвом с большим разрешением экрана.</p>
+      </div>
+      
+      <!-- Прячем для IE -->
+      <div class="brous_error">
+        <p>Извините! сайт не поддерживает данный тип браузера. Попробуйте воспользоваться другим браузером...</p>
+      </div>
+
     </div>
 
    
 <!-- SWEPER
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
 
-<div class="size_error hidden-md hidden-xl">
-  <p>Извините! сайт не поддерживает данный тип устройств. Попробуйте воспользоваться устройтвом с большим разрешением экрана.</p>
-</div>
-<div class="brous_error">
-  <p>Извините! сайт не поддерживает данный тип браузера. Попробуйте воспользоваться другим браузером...</p>
-</div>
+
   
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="js/jQuery.js"></script>
@@ -471,14 +480,12 @@
   </script>
   
   
-  <!-- Подключаем карусель JS -->
-  <script src="js/bootstrap.min.js"></script>
   <!-- Подключаем карусель Swipper-->
   <script src="js/swiper.jquery.min.js"></script>
   <!--Мой js-->
   <script src="js/common.js"></script>
 
-</body>
+  </body>
 </html>
 
 
