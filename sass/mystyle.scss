@@ -93,7 +93,7 @@ html{
         @include align-items ($al-items);
         flex-direction:column;
         &#main,
-        .swiper-container-v,
+        &#dis_port,
         &#dis_skill,
         &#dev_skill,
         &#dev_port{
@@ -101,7 +101,7 @@ html{
           background-size: cover;
           background-position: top center;
         }
-        .swiper-container-v{
+        &#dis_port{
           background-image: url('../img/bg01_blue.jpg');
         }
         &#dis_skill{
@@ -217,6 +217,42 @@ html{
             }
             p{
               margin:10px 0;
+            }
+          }
+        }
+        &#dis_port{
+          .swiper-container-v{
+            &.disactive{
+            display: none;
+            }
+          }
+          #img_port_dis_03,
+          #img_port_dis_04,
+          #img_port_dis_05,
+          #img_port_dis_09,
+          #img_port_dis_10,
+          #img_port_dis_11{
+            display: none;
+            overflow-y: scroll;
+            &.active{
+              display: block;
+              .esc_port_dis{
+                display: block;
+                position: absolute;
+                top:2vh;
+                right: 5vw;
+              }
+            }
+            .esc_port_dis{
+              background-image: url('../img/esc.png');
+              background-size: cover;
+              width: 20px;
+              height: 16px;
+            }
+            img{
+              margin: 0 10vw;
+              width: 80vw;
+
             }
           }
         }

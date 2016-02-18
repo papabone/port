@@ -30,6 +30,7 @@ $(document).ready(function() {
         return '<span class="' + className + '">' + pageName[(index+1)] + '</span>';
       },
       keyboardControl: true,
+      threshold: 25,
       speed: 1000
   });
   var swiperV = new Swiper('.swiper-container-v', {
@@ -46,21 +47,110 @@ $(document).ready(function() {
       direction: 'vertical',
       mousewheelControl: true,
       keyboardControl: true,
-      speed: 1000
+      speed: 10000
   });
     
-//popup
+//popup form
   $("#contact").click(function() {
-      $("#contact-form").addClass("active"),
-      $(".swiper-pagination-h").addClass("disactive"),
-      $(".disappear").addClass("disactive");
+    $("#contact-form").addClass("active"),
+    $(".swiper-pagination-h").addClass("disactive"),
+    $(".disappear").addClass("disactive"),
+    swiperH.lockSwipeToNext(),
+    swiperH.lockSwipeToPrev();
   });
   $("#esc").click(function() {
-      $("#contact-form").removeClass("active"),
-      $(".swiper-pagination-h").removeClass("disactive"),
-      $(".disappear").removeClass("disactive");
+    $("#contact-form").removeClass("active"),
+    $(".swiper-pagination-h").removeClass("disactive"),
+    $(".disappear").removeClass("disactive"),
+      swiperH.unlockSwipeToNext(),
+      swiperH.unlockSwipeToPrev();
   });
 
-    
+//popup img
+  $("#min_port_dis_03").click(function() {
+    $("#img_port_dis_03").addClass("active"),
+    $(".swiper-pagination-h").addClass("disactive"),
+    $(".swiper-pagination-v").addClass("disactive"),
+    $(".swiper-container-v").addClass("disactive"),
+    swiperH.lockSwipeToNext(),
+    swiperH.lockSwipeToPrev();
+  });
+  
+  $("#min_port_dis_04").click(function() {
+    $("#img_port_dis_04").addClass("active"),
+    $(".swiper-pagination-h").addClass("disactive"),
+    $(".swiper-pagination-v").addClass("disactive"),
+    $(".swiper-container-v").addClass("disactive"),
+    swiperH.lockSwipeToNext(),
+    swiperH.lockSwipeToPrev();
+  });
+  
+  $("#min_port_dis_05").click(function() {
+    $("#img_port_dis_05").addClass("active"),
+    $(".swiper-pagination-h").addClass("disactive"),
+    $(".swiper-pagination-v").addClass("disactive"),
+    $(".swiper-container-v").addClass("disactive"),
+    swiperH.lockSwipeToNext(),
+    swiperH.lockSwipeToPrev();
+  });
+  
+  $("#min_port_dis_09").click(function() {
+    $("#img_port_dis_09").addClass("active"),
+    $(".swiper-pagination-h").addClass("disactive"),
+    $(".swiper-pagination-v").addClass("disactive"),
+    $(".swiper-container-v").addClass("disactive"),
+    swiperH.lockSwipeToNext(),
+    swiperH.lockSwipeToPrev();
+  });
+  
+  $("#min_port_dis_10").click(function() {
+    $("#img_port_dis_10").addClass("active"),
+    $(".swiper-pagination-h").addClass("disactive"),
+    $(".swiper-pagination-v").addClass("disactive"),
+    $(".swiper-container-v").addClass("disactive"),
+    swiperH.lockSwipeToNext(),
+    swiperH.lockSwipeToPrev();
+  });
+  
+  $("#min_port_dis_11").click(function() {
+    $("#img_port_dis_11").addClass("active"),
+    $(".swiper-pagination-h").addClass("disactive"),
+    $(".swiper-pagination-v").addClass("disactive"),
+    $(".swiper-container-v").addClass("disactive"),
+    swiperH.lockSwipeToNext(),
+    swiperH.lockSwipeToPrev();
+  });
+
+
+  $(".esc_port_dis").click(function() {
+      $("#img_port_dis_03, #img_port_dis_04, #img_port_dis_05").removeClass("active"),
+      $("#img_port_dis_09, #img_port_dis_10,#img_port_dis_11").removeClass("active"),
+      $(".swiper-pagination-h").removeClass("disactive"),
+      $(".swiper-pagination-v").removeClass("disactive"),
+      $(".swiper-container-v").removeClass("disactive"),
+      swiperH.unlockSwipeToNext(),
+      swiperH.unlockSwipeToPrev();
+  });
+
+  $(document).keydown(function(e){
+    if (e.keyCode == 27){
+      $("#img_port_dis_03, #img_port_dis_04, #img_port_dis_05").removeClass("active"),
+      $("#img_port_dis_09, #img_port_dis_10,#img_port_dis_11").removeClass("active"),
+      $(".swiper-pagination-h").removeClass("disactive"),
+      $(".swiper-pagination-v").removeClass("disactive"),
+      $(".swiper-container-v").removeClass("disactive"),
+      $("#contact-form").removeClass("active"),
+      $(".swiper-pagination-h").removeClass("disactive"),
+      $(".disappear").removeClass("disactive"),
+      swiperH.unlockSwipeToNext(),
+      swiperH.unlockSwipeToPrev();
+    }
+  });
 });
+
+
+
+
+
+
 					
