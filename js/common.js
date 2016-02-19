@@ -69,7 +69,7 @@ $(document).ready(function() {
 
   //popup img
     //скрыть фоновые блоки
-  $("#min_port_dis_03, #min_port_dis_04,#min_port_dis_05,#min_port_dis_09,#min_port_dis_10, #min_port_dis_11").click(function() {
+  $("#min_port_dis_03, #min_port_dis_04,#min_port_dis_05, #min_port_dis_08, #min_port_dis_09,#min_port_dis_10, #min_port_dis_11").click(function() {
     $(".swiper-pagination-h").addClass("disactive"),
     $(".swiper-pagination-v").addClass("disactive"),
     $(".swiper-container-v").addClass("disactive"),
@@ -89,6 +89,10 @@ $(document).ready(function() {
     $("#img_port_dis_05").addClass("active")
   });
   
+  $("#min_port_dis_08").click(function() {
+    $("#img_port_dis_08").addClass("active")
+  });
+
   $("#min_port_dis_09").click(function() {
     $("#img_port_dis_09").addClass("active")
   });
@@ -104,7 +108,7 @@ $(document).ready(function() {
   //крестик для выхода
   $(".esc_port_dis").click(function() {
       $("#img_port_dis_03, #img_port_dis_04, #img_port_dis_05").removeClass("active"),
-      $("#img_port_dis_09, #img_port_dis_10,#img_port_dis_11").removeClass("active"),
+      $("#img_port_dis_08, #img_port_dis_09, #img_port_dis_10,#img_port_dis_11").removeClass("active"),
       $(".swiper-pagination-h").removeClass("disactive"),
       $(".swiper-pagination-v").removeClass("disactive"),
       $(".swiper-container-v").removeClass("disactive"),
@@ -116,7 +120,7 @@ $(document).ready(function() {
   $(document).keydown(function(e){
     if (e.keyCode == 27){
       $("#img_port_dis_03, #img_port_dis_04, #img_port_dis_05").removeClass("active"),
-      $("#img_port_dis_09, #img_port_dis_10,#img_port_dis_11").removeClass("active"),
+      $("#img_port_dis_08, #img_port_dis_09, #img_port_dis_10,#img_port_dis_11").removeClass("active"),
       $(".swiper-pagination-h").removeClass("disactive"),
       $(".swiper-pagination-v").removeClass("disactive"),
       $(".swiper-container-v").removeClass("disactive"),
