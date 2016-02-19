@@ -47,10 +47,10 @@ $(document).ready(function() {
       direction: 'vertical',
       mousewheelControl: true,
       keyboardControl: true,
-      speed: 10000
+      speed: 1000
   });
-    
-//popup form
+  
+  //popup form
   $("#contact").click(function() {
     $("#contact-form").addClass("active"),
     $(".swiper-pagination-h").addClass("disactive"),
@@ -58,6 +58,7 @@ $(document).ready(function() {
     swiperH.lockSwipeToNext(),
     swiperH.lockSwipeToPrev();
   });
+    //крестик для выхода
   $("#esc").click(function() {
     $("#contact-form").removeClass("active"),
     $(".swiper-pagination-h").removeClass("disactive"),
@@ -66,62 +67,41 @@ $(document).ready(function() {
       swiperH.unlockSwipeToPrev();
   });
 
-//popup img
-  $("#min_port_dis_03").click(function() {
-    $("#img_port_dis_03").addClass("active"),
+  //popup img
+    //скрыть фоновые блоки
+  $("#min_port_dis_03, #min_port_dis_04,#min_port_dis_05,#min_port_dis_09,#min_port_dis_10, #min_port_dis_11").click(function() {
     $(".swiper-pagination-h").addClass("disactive"),
     $(".swiper-pagination-v").addClass("disactive"),
     $(".swiper-container-v").addClass("disactive"),
     swiperH.lockSwipeToNext(),
     swiperH.lockSwipeToPrev();
+  });
+    //открыть попап
+  $("#min_port_dis_03").click(function() {
+    $("#img_port_dis_03").addClass("active")
   });
   
   $("#min_port_dis_04").click(function() {
-    $("#img_port_dis_04").addClass("active"),
-    $(".swiper-pagination-h").addClass("disactive"),
-    $(".swiper-pagination-v").addClass("disactive"),
-    $(".swiper-container-v").addClass("disactive"),
-    swiperH.lockSwipeToNext(),
-    swiperH.lockSwipeToPrev();
+    $("#img_port_dis_04").addClass("active")
   });
   
   $("#min_port_dis_05").click(function() {
-    $("#img_port_dis_05").addClass("active"),
-    $(".swiper-pagination-h").addClass("disactive"),
-    $(".swiper-pagination-v").addClass("disactive"),
-    $(".swiper-container-v").addClass("disactive"),
-    swiperH.lockSwipeToNext(),
-    swiperH.lockSwipeToPrev();
+    $("#img_port_dis_05").addClass("active")
   });
   
   $("#min_port_dis_09").click(function() {
-    $("#img_port_dis_09").addClass("active"),
-    $(".swiper-pagination-h").addClass("disactive"),
-    $(".swiper-pagination-v").addClass("disactive"),
-    $(".swiper-container-v").addClass("disactive"),
-    swiperH.lockSwipeToNext(),
-    swiperH.lockSwipeToPrev();
+    $("#img_port_dis_09").addClass("active")
   });
   
   $("#min_port_dis_10").click(function() {
-    $("#img_port_dis_10").addClass("active"),
-    $(".swiper-pagination-h").addClass("disactive"),
-    $(".swiper-pagination-v").addClass("disactive"),
-    $(".swiper-container-v").addClass("disactive"),
-    swiperH.lockSwipeToNext(),
-    swiperH.lockSwipeToPrev();
+    $("#img_port_dis_10").addClass("active")
   });
   
   $("#min_port_dis_11").click(function() {
-    $("#img_port_dis_11").addClass("active"),
-    $(".swiper-pagination-h").addClass("disactive"),
-    $(".swiper-pagination-v").addClass("disactive"),
-    $(".swiper-container-v").addClass("disactive"),
-    swiperH.lockSwipeToNext(),
-    swiperH.lockSwipeToPrev();
+    $("#img_port_dis_11").addClass("active")
   });
 
-
+  //крестик для выхода
   $(".esc_port_dis").click(function() {
       $("#img_port_dis_03, #img_port_dis_04, #img_port_dis_05").removeClass("active"),
       $("#img_port_dis_09, #img_port_dis_10,#img_port_dis_11").removeClass("active"),
@@ -132,6 +112,7 @@ $(document).ready(function() {
       swiperH.unlockSwipeToPrev();
   });
 
+  //escape для выхода (глобально)
   $(document).keydown(function(e){
     if (e.keyCode == 27){
       $("#img_port_dis_03, #img_port_dis_04, #img_port_dis_05").removeClass("active"),

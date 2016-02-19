@@ -120,13 +120,14 @@ html{
           }
           h1{
             margin-top: 10vh;
-            letter-spacing: 10pt;
+            letter-spacing: 10px;
             span#first_letter{
-              padding-right: 2%;
+              padding-right: 10px;
             }
             span#second_word{
-              padding-left:1%;
-              letter-spacing: 5pt; 
+              position: relative;
+              left:15px;
+              letter-spacing: 6px; 
             }
           }
           h3{
@@ -216,7 +217,7 @@ html{
               padding-left: 5%;
             }
             p{
-              margin:10px 0;
+              margin: 0;
             }
           }
         }
@@ -234,6 +235,7 @@ html{
           #img_port_dis_11{
             display: none;
             overflow-y: scroll;
+            cursor: default;
             &.active{
               display: block;
               .esc_port_dis{
@@ -252,7 +254,6 @@ html{
             img{
               margin: 0 10vw;
               width: 80vw;
-
             }
           }
         }
